@@ -158,7 +158,7 @@ font-style: normal;
   transition-property: "opacity";
   opacity: 100%;
   transition: all ease 0.4s;
-  color: #fff;
+  color: pink;
   cursor: pointer;
 }
 
