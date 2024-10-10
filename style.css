@@ -154,15 +154,6 @@ font-style: normal;
   margin-top: 5vw;
 }
 
-.captionn:hover{
-  transition-property: "opacity";
-  opacity: 100%;
-  transition: all ease 0.4s;
-  color: pink;
-  cursor: pointer;
-}
-
-
 
 /*ABOUT ME design dator*/
 #aboutme{
