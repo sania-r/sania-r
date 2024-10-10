@@ -129,19 +129,9 @@ color: #ff0068;
   max-height: 100%;
 }
 
-.captionn{
-  display: flex;
-  position: absolute;
-  height: 15vw;
-  width: 27vw;
- z-index: 1;
-  margin-top: 0vw;
-  flex-direction: column;
-  transition: all ease 0.4s;
-  opacity: 0%;
-}
 
 a.object-link{
+  position: absolute;
      font-family: "bebas-neue", sans-serif;
 font-weight: 400;
 font-style: normal;
