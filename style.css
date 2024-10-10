@@ -1,7 +1,7 @@
 
 /*net for start*/
 body{
-  background-color: yellow;
+  background-color: white;
   overflow-x: hidden;
 }
 
@@ -21,7 +21,7 @@ main{
 }
 
 .navbar a{
-color: white;
+color: black;
 text-decoration: none}
 
 .navbar{
@@ -33,17 +33,17 @@ text-decoration: none}
   width: 100vw;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.63);
+  background-color: rgba(0, 0, 0, 0.13);
 }
 
 .nav-menu{
-  font-family: "bebas-neue", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 2vw;
+  font-family: "new-science", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+font-size: 1.0vw;
   display: flex;
   justify-content: space-around;
-  width: 40vw;
+  width: 24vw;
   align-items: center;
   padding: 1vw;
   gap: 0vw;
@@ -52,9 +52,9 @@ font-size: 2vw;
 #nav-branding{
 margin-left: 5vw;
   margin-top: -1vw;
-font-family: "bebas-neue", sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-family: "new-science", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 font-size: 3vw;
   color: #0db4e5;
 }
@@ -123,43 +123,90 @@ color: #ff0068;
   height: 15vw;
 }
 
+
 .likhet{
   object-fit: cover;
   width: 100%;
   max-height: 100%;
 }
 
-.captionn{
-  display: flex;
-  position: absolute;
-  height: 15vw;
-  width: 27vw;
- z-index: 1;
-  margin-top: 0vw;
-  flex-direction: column;
-  transition: all ease 0.4s;
-  opacity: 0%;
+#box1{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#box2{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/LIKHET.png);
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+#box3{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/webb.png);
+  background-size: cover;
+}
+
+#box4{
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(/vinberga/vinberga.png);
+  background-size: cover;
+}
+
+#box5{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(/paintings/audrey.png);
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+#box6{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/thesiss.PNG);
+  background-size: cover;
+
+}
+
+.video{
+  
+  object-fit: cover;
 }
 
 a.object-link{
-     font-family: "bebas-neue", sans-serif;
-font-weight: 400;
+  display: flex;
+position: absolute;
+font-family: "new-science", sans-serif;
+font-weight: 700;
 font-style: normal;
-  font-size: 4vw;
+  font-size: 1.5vw;
   color: white;
   list-style: none;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.63);
-  text-align: center;
-  margin-top: 5vw;
+  width: 100%;
+  height: 100%;
+align-items: center; 
+justify-content: center;
+opacity: 0%;
+transition: all ease 0.3s;
 }
 
-.captionn:hover{
-  transition-property: "opacity";
-  opacity: 100%;
-  transition: all ease 0.4s;
-  color: #fff;
-  cursor: pointer;
+a.object-link:hover{
+ opacity: 100%;
+ transition-property: "opacity";
 }
 
 
