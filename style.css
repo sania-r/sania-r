@@ -137,55 +137,76 @@ color: #ff0068;
   max-height: 100%;
 }
 
+.boxes{
+  position: relative; 
+  width: 100%; 
+  height: auto;
+  overflow: hidden;
+}
+
 #box1{
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  width: 27vw;
+  height: 15vw;
+  background-size: cover; 
+  z-index: 1; 
 }
 
 #box2{
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  width: 27vw;
+  height: 15vw;
   background-image: url(/images/LIKHET.png);
   background-size: cover;
   background-position-y: bottom;
+  z-index: 1; 
 }
 
 #box3{
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  width: 27vw;
+  height: 15vw;
   background-image: url(/images/webb.png);
   background-size: cover;
+  z-index: 1; 
 }
 
 #box4{
   display: inline-flex;
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  width: 27vw;
+  height: 15vw;
   background-image: url(/vinberga/vinberga.png);
   background-size: cover;
+  z-index: 1; 
 }
 
 #box5{
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  width: 27vw;
+  height: 15vw;
   background-image: url(/paintings/audrey.png);
   background-size: cover;
   background-position-y: 50%;
+  z-index: 1; 
 }
 
 #box6{
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  width: 27vw;
+  height: 15vw;
   background-image: url(/images/thesiss.PNG);
   background-size: cover;
+  z-index: 1; 
 
 }
+
+.text { 
+  position: relative; 
+  z-index: 2; 
+  color: white;
+} 
+
 
 .video{
   
@@ -194,7 +215,7 @@ color: #ff0068;
 
 a.object-link{
   display: flex;
-position: absolute;
+position: relative;
 font-family: "new-science", sans-serif;
 font-weight: 700;
 font-style: normal;
@@ -203,12 +224,13 @@ font-style: normal;
   list-style: none;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.63);
-  width: 100%;
-  height: 100%;
+  width: 27vw;
+  height: 15vw;
 align-items: center; 
 justify-content: center;
 opacity: 0%;
 transition: all ease 0.3s;
+z-index: 1; 
 }
 
 a.object-link:hover{
