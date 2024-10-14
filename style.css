@@ -139,8 +139,8 @@ color: #ff0068;
 
 .boxes{
   position: relative; 
-  width: 100%; 
-  height: auto;
+  width: 27vw; 
+  height: 15vw;
   overflow: hidden;
 }
 
@@ -150,6 +150,7 @@ color: #ff0068;
   height: 15vw;
   background-size: cover; 
   z-index: 1; 
+  filter: blur(0vw);
 }
 
 #box2{
@@ -160,6 +161,8 @@ color: #ff0068;
   background-size: cover;
   background-position-y: bottom;
   z-index: 1; 
+  filter: blur(0vw);
+
 }
 
 #box3{
@@ -169,6 +172,8 @@ color: #ff0068;
   background-image: url(/images/webb.png);
   background-size: cover;
   z-index: 1; 
+  filter: blur(0vw);
+
 }
 
 #box4{
@@ -179,6 +184,8 @@ color: #ff0068;
   background-image: url(/vinberga/vinberga.png);
   background-size: cover;
   z-index: 1; 
+  filter: blur(0vw);
+
 }
 
 #box5{
@@ -189,16 +196,26 @@ color: #ff0068;
   background-size: cover;
   background-position-y: 50%;
   z-index: 1; 
+  filter: blur(0vw);
+
 }
 
 #box6{
   position: absolute;
   width: 27vw;
   height: 15vw;
-  background-image: url(/images/thesiss.PNG);
+  background-image: url(/images/thesiss.PNG); 
   background-size: cover;
   z-index: 1; 
+  filter: blur(0vw);
+}
 
+.blurry{
+  filter: blur(0vw);
+}
+
+.blurry.active{
+  filter: blur(2vw);
 }
 
 .text { 
