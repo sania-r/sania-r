@@ -210,13 +210,6 @@ color: #ff0068;
   filter: blur(0vw);
 }
 
-.blurry{
-  filter: blur(0vw);
-}
-
-.blurry.active{
-  filter: blur(2vw);
-}
 
 .text { 
   position: relative; 

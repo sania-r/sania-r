@@ -1,7 +1,3 @@
-
-
-
-
 function openmail(){
 window.open('mailto:sania.rahimian@hotmail.com')
 };
@@ -20,14 +16,8 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }))
 
 
-var box1 = document.getElementById('box1');
-var blurry = document.querySelector('.blurry');
 
-box1.addEventListener('mouseover', () => {
-  blurry.classList.toggle('active');
-});
-
-/* var btn = document.getElementById('btn')
+var btn = document.getElementById('btn')
 btn.addEventListener('click', function(e){
   e.preventDefault()
   var name = document.getElementById('name').value;
@@ -55,4 +45,3 @@ btn.addEventListener('click', () => {
   form.classList.toggle('active');
   thankyou.classList.toggle('active');
 })
-*/
