@@ -132,151 +132,48 @@ font-size: 1.5vw;
 color: #ff0068;
 }
 
-.projekt{
-  grid-area: main;
-  grid-template-columns: 30vw 30vw 30vw;
-  display: grid;
-  grid-template-rows: repeat(4, 250px);
-  margin: 0 auto;
-  margin-top: 0;
+
+.project-container{
+  margin-top: 9vw;
+  display: flex;
+  width: 90vw;
+  height: 50vw;
 
 }
 
-.objects-menu{
+.project-menu{
   display: flex;
-  width: 100vw;
-  flex-wrap: wrap;
+  width: 87vw;
+  height: 45vw;
+ flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+
 }
 
 .object-item{
-  justify-content: space-around;
-  padding: 0.5vw;
-  display: flex;
-  width: 27vw;
-  height: 15vw;
+display: block;
+width: 27vw;
+height: 15vw;
+position: relative;
 }
 
-
-.likhet{
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
-}
-
-
-
-#box1{
-  position: absolute;
-  width: 27vw;
-  height: 15vw;
-  background-size: cover; 
-  z-index: 1; 
-  filter: blur(0vw);
-}
-
-#box2{
+.imagez{
+margin-top: 0 auto;
   position: relative;
   width: 27vw;
   height: 15vw;
-  background-image: url(/images/LIKHET.png);
-  background-size: cover;
-  z-index: 1; 
-  filter: blur(0vw);
-
-}
-
-#box2:hover:before{
-  position: absolute;
-  background-size: cover;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-image: url(/images/LIKHET.png);
-  filter: blur(2vw);
-}
-
-#box3{
-  position: absolute;
-  width: 27vw;
-  height: 15vw;
-  background-image: url(/images/webb.png);
-  background-size: cover;
-  z-index: 1; 
-  filter: blur(0vw);
-
-
-}
-
-#box4{
-  position: absolute;
-  width: 27vw;
-  height: 15vw;
-  background-image: url(/vinberga/vinberga.png);
-  background-size: cover;
-  z-index: 1; 
-  filter: blur(0vw);
-
-
-}
-
-#box5{
-  position: absolute;
-  width: 27vw;
-  height: 15vw;
-  background-image: url(/paintings/audrey.png);
-  background-size: cover;
-  background-position-y: 50%;
-  z-index: 1; 
-  filter: blur(0vw);
-
-
-}
-
-#box6{
-  position: absolute;
-  width: 27vw;
-  height: 15vw;
-  background-image: url(/images/thesiss.PNG); 
-  background-size: cover;
-  z-index: 1; 
-  filter: blur(0vw);
-
+  object-fit: cover;
 }
 
 
 .text { 
-  display: flex;
-  position: relative;
-  z-index: 2;
-  color: white;
-} 
-
-
-.video{
-  object-fit: cover;
-}
-
-.boxes{
-  position: relative;
-  z-index: 1;
-  width: 27vw; 
+  display:block;
+  width: 27vw;
   height: 15vw;
-  overflow: hidden;
-  filter: blur(0vw);
-  transition: all ease 0.4s;
-
-}
-
-.boxes:hover{
-  transition-property: "filter";
-  filter: blur(0.2vw);
-}
-
-a.object-link{
-  display: flex;
-position: relative;
-font-family: "new-science", sans-serif;
+  text-align: center;
+  position: absolute;
+  font-family: "new-science", sans-serif;
 font-weight: 700;
 font-style: normal;
   font-size: 1.5vw;
@@ -284,20 +181,32 @@ font-style: normal;
   list-style: none;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.63);
+  transition: all ease 0.4s;
+  opacity: 0;
+} 
+
+
+.video{
   width: 27vw;
-  height: 15vw;
-align-items: center; 
-justify-content: center;
-opacity: 100%;
-transition: all ease 0.3s;
-z-index: 3; 
+  height: auto;
 }
 
-a.object-link:hover{
- opacity: 100%;
- transition-property: "opacity";
+
+a.object-link{
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+width: 27vw;
+height: 15vw;
+color: white;
 }
 
+.text:hover{
+  opacity: 100%;
+  transition-property: "opacity";
+}
 
 
 /*ABOUT ME design dator*/
