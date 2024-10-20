@@ -33,15 +33,17 @@ main{
 
 #brandy{
   max-width: 100%;
-  display: block;
+  display: inline-flex;
   width: 20vw;
 height: 5vw;
-margin-top: 1vw;
 }
 
 /*nav*/
 
 header{
+width: 100vw;
+left: 0;
+height: 5vw;
 grid-area: header;
 z-index: 5;
 position: fixed;
@@ -58,23 +60,20 @@ color: black;
 text-decoration: none}
 
 .navbar{
-  z-index: 2;
-  margin-left: -2vw;
-  position: fixed;
   display: flex;
   height: 5vw;
   width: 100vw;
-  justify-content: space-between;
-  align-items: center;
   background-color: rgba(0, 0, 0, 0.13);
 }
 
 .nav-menu{
+  margin-left: 3.5vw;
   font-family: "new-science", sans-serif;
-  font-weight: 800;
+  font-weight: 500;
   font-style: normal;
 font-size: 1.0vw;
   display: flex;
+  position: absolute;
   justify-content: space-around;
   width: 24vw;
   align-items: center;
@@ -83,15 +82,17 @@ font-size: 1.0vw;
 }
 
 #nav-branding{
-margin-left: 5vw;
-  margin-top: -1vw;
-  font-family: "new-science", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-font-size: 3vw;
-  color: #0db4e5;
+display: flex;
+position: relative;
+left: 70.8%;
+height: 5vw;
+width: 20vw;
 }
 
+h1{
+  left: 20%;
+  position: relative;
+}
 .nav-link{
   transition: 0.4s ease;
 }
@@ -116,21 +117,7 @@ color: #0db4e5;
   -webkit-transition: all 0.3s ease-in-out;
   background-color: white;
 }
-/*sania presentationen över videon*/
 
-h1{
-  display: block;
-  text-align: center;
-  width: 10vw;
-  height: 3vw;
-margin-top: 5.5vw;
-margin-left: -55vw;
-font-family: "bebas-neue-pro", sans-serif;
-font-weight: 600;
-font-style: italic;
-font-size: 1.5vw;
-color: #ff0068;
-}
 
 
 .project-container{
@@ -144,7 +131,7 @@ color: #ff0068;
 .project-menu{
   display: flex;
   width: 87vw;
-  height: 45vw;
+  height: 32vw;
  flex-wrap: wrap;
   list-style: none;
   justify-content: space-around;
@@ -159,15 +146,22 @@ position: relative;
 }
 
 .imagez{
+  display: flex;
 margin-top: 0 auto;
   position: relative;
   width: 27vw;
   height: 15vw;
   object-fit: cover;
+  transition: all ease 0.3s;
+  filter: blur(0vw);
+}
+
+.project-container .project-menu .object-item:hover img{
+  filter: blur(0.1vw);
 }
 
 
-.text { 
+.text{ 
   display:block;
   width: 27vw;
   height: 15vw;
@@ -180,8 +174,8 @@ font-style: normal;
   color: white;
   list-style: none;
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.63);
-  transition: all ease 0.4s;
+  background-color: rgba(0, 0, 0, 0.43);
+  transition: all ease 0.3s;
   opacity: 0;
 } 
 
