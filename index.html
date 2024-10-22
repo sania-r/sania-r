@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width">
     <title>DesignBySania</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     
   </head>
   
@@ -15,6 +16,37 @@
 
     <main>
   
+    <div class="welcome-container">
+      
+      <div class="animation-segment" id="animation-container">
+        <script>
+          var animation = bodymovin.loadAnimation({
+            container: document.getElementById('animation-container'),
+            path: "logo.json",
+            render: 'svg',
+            loop: true,
+            autoplay: true,
+            name: 'logos'
+          });
+        </script>
+      </div>
+
+      <div class="animation-neon" id="neon">
+        <script>
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById('neon'),
+        path: "neon.json",
+        render: 'svg',
+        loop: false,
+        autoplay: true,
+        name: 'neons'
+      });
+      </script>
+</div>
+
+        </div>
+    
+
       <header>
   <nav class="navbar">
     <a href="index.html" id="nav-branding"><img id="brandy" src="/images/jello3.svg" alt="logo"></a>
@@ -39,7 +71,9 @@
       <span class="bar"></span>
     </div>
   </nav>
+
   </header>
+
 
 <div class="project-bg"></div>
 
