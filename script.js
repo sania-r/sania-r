@@ -1,3 +1,23 @@
+document.addEventListener('DOMContentLoaded', function() {
+
+  //Animation function start//
+
+function bouncy(){
+var animation = bodymovin.loadAnimation({
+  container: document.getElementById('animation-container'),
+  path: 'logo.json',
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  name: 'logos'
+});
+}
+
+bouncy();
+
+
+//Other event listeners and functionality//
+
 function openmail(){
 window.open('mailto:sania.rahimian@hotmail.com')
 };
@@ -8,12 +28,12 @@ const navMenu = document.querySelector(".nav-menu");
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
-})
+});
 
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-}))
+}));
 
 
 
@@ -34,7 +54,7 @@ btn.addEventListener('click', function(e){
 }).then(
   message => alert(message)
 );
-})
+});
 
 
 var form = document.querySelector('.form');
@@ -44,4 +64,8 @@ var thankyou = document.querySelector('.thankyou');
 btn.addEventListener('click', () => {
   form.classList.toggle('active');
   thankyou.classList.toggle('active');
-})
+});
+
+
+});
+

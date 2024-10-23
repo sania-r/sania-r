@@ -7,8 +7,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>DesignBySania</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" defer></script>
+    <script src="script.js" defer></script>
+
     
   </head>
   
@@ -17,19 +19,7 @@
     <main>
   
     <div class="welcome-container">
-      
-      <div class="animation-segment" id="animation-container">
-        <script>
-          var animation = bodymovin.loadAnimation({
-            container: document.getElementById('animation-container'),
-            path: "logo.json",
-            render: 'svg',
-            loop: true,
-            autoplay: true,
-            name: 'logos'
-          });
-        </script>
-      </div>
+      <div id="animation-container" style="width: 300px; height: 300px;"></div>
 
         </div>
     
@@ -139,7 +129,6 @@
   <p id="contactinfo">Interested? contact me!</p>
 </footer>
 
-   <script src="script.js"></script>
   </main>
     </body>
   </html>

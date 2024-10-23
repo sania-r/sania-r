@@ -1,3 +1,7 @@
+html{
+ overflow-x: hidden;
+}
+
 
 
 /*net for start*/
@@ -42,6 +46,7 @@ height: 5vw;
 /*nav*/
 
 header{
+  position: absolute;
 width: 100vw;
 left: 0;
 height: 5vw;
@@ -145,13 +150,14 @@ position: absolute;
 }
 
 .project-bg{
-  display: flex;
+  display: block;
   width: 90vw;
   height: 37vw;
   left: 2.8vw;
+  margin: 0;
   top: 50vw;
   border-radius: 2vw;
-  mix-blend-mode: color-dodge;
+  mix-blend-mode: overlay;
   background-color: pink;
   position: relative;
 }
@@ -160,7 +166,7 @@ position: absolute;
   box-sizing: border-box;
   backdrop-filter: blur(2vw);
   content: "";
-  display: flex;
+  display: block;
   width: 90vw;
   height: 37vw;
   border-radius: 2vw;
@@ -172,24 +178,17 @@ position: absolute;
 
 .welcome-container{
   display: block;
+  grid-area: main;
   background-color: #0db4e5;
   width: 100vw;
   height: 48vw;
   margin: 0;
   left: 0;
-  position: absolute;
-  overflow: hidden;
+  position: relative;
 }
 
 #animation-container{
-  display: flex;
-  z-index: 5;
-  position: absolute;
-  left: -11.5vw;
-  top: -24vw;
-  width: 110vw;
-  height: 100vw;
-  object-fit: cover;
+background-color: pink;;
 }
 
 
@@ -235,7 +234,10 @@ font-style: normal;
   opacity: 0;
 } 
 
-
+.lottie{
+  display: block;
+  position: absolute;
+}
 .video{
   width: 27vw;
   height: auto;
