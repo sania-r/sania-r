@@ -209,6 +209,7 @@ background-color: pink;
 mix-blend-mode: plus-lighter;
 filter: blur(3vw);
 opacity: 0;
+transition: all ease 0.2s;
 }
 
 /*designbysania color*/
