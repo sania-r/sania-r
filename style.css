@@ -1,5 +1,5 @@
 html{
- overflow-x: hidden;
+
 }
 
 
@@ -157,7 +157,7 @@ position: absolute;
   margin: 0;
   top: 50vw;
   border-radius: 2vw;
-  mix-blend-mode: overlay;
+  mix-blend-mode: normal;
   background-color: pink;
   position: relative;
 }
@@ -171,7 +171,7 @@ position: absolute;
   height: 37vw;
   border-radius: 2vw;
   background-color: pink;
-  mix-blend-mode: overlay;
+  mix-blend-mode: normal;
   opacity: 100%;
   position: relative;
 }
@@ -181,17 +181,24 @@ position: absolute;
   grid-area: main;
   background-color: #0db4e5;
   width: 100vw;
-  height: 48vw;
+  height: 40vw;
   margin: 0;
   left: 0;
-  position: relative;
+  top: 0;
+  position: fixed;
+  z-index: -2;
+  overflow: hidden;
+  transition: all ease .1s;
 }
 
 #animation-container{
-background-color: pink;;
+  position: relative;
+  z-index: -2;
+  left: 30vw;
+  top: -2vw;
+  object-fit: cover;
+background-color: pink;
 }
-
-
 
 .object-item{
 display: block;

@@ -16,6 +16,28 @@ var animation = bodymovin.loadAnimation({
 bouncy();
 
 
+function scrolly(){
+var start = document.querySelector('.welcome-container');
+window.addEventListener("scroll", () => {
+  const targetY = 633.5999755859375;
+  const scrollY = window.scrollY; 
+  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+  const scalingValue = 1 + scrollY / maxScroll;
+  const opacityValue = 1 - (scrollY / targetY)
+  const innerHeight = console.log(scrollY);
+  
+  
+  
+  start.style.transform = `scale(${scalingValue})`
+  start.style.opacity = opacityValue;
+  
+
+});
+}
+
+scrolly();
+
+
 //Other event listeners and functionality//
 
 function openmail(){
