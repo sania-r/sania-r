@@ -23,7 +23,7 @@ window.addEventListener("scroll", () => {
   const scrollY = window.scrollY; 
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
   const scalingValue = 1 + scrollY / maxScroll;
-  const opacityValue = 1 - (scrollY / targetY)
+  const opacityValue = 1 - (scrollY / targetY);
   const innerHeight = console.log(scrollY);
   
   
@@ -37,6 +37,45 @@ window.addEventListener("scroll", () => {
 
 scrolly();
 
+
+
+function flashy(){
+  var flash = bodymovin.loadAnimation({
+    container: document.getElementById('flash-container'),
+    path: 'gud.json',
+    renderer: 'svg',
+    loop: true,
+    autoplay: false,
+    name: 'logons'
+  });
+
+  return flash;
+  }
+
+const flashAnimation = flashy();
+
+
+function toggleflash(){
+  const starty = document.getElementById('flash-container');
+
+  window.addEventListener("scroll", () => {
+  const targetY = 211.1999969482422;
+  const scrollY = window.scrollY;
+  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+
+  if (scrollY >= targetY) {
+    flashAnimation.play();
+    starty.style.opacity = 1;
+  } else {
+    flashAnimation.stop();
+    const opacityValue = Math.max(0, 1 - (targetY - scrollY) / targetY);
+    starty.style.opacity = opacityValue;
+  }
+  
+  });
+}
+
+toggleflash();
 
 //Other event listeners and functionality//
 

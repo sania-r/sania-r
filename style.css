@@ -200,6 +200,33 @@ position: absolute;
 background-color: pink;
 }
 
+#flash-container{
+  position: absolute;
+  z-index: -2;
+  left: 30.5vw;
+  top: -0.5vw;
+  object-fit: cover;
+mix-blend-mode: plus-lighter;
+filter: blur(3vw);
+opacity: 0;
+}
+
+/*designbysania color*/
+html body main div.welcome-container div#animation-container svg g{
+  fill:white;
+}
+
+/*ball color*/
+html body main div.welcome-container div#animation-container svg g g g path{
+fill: white;
+}
+
+/*line color*/
+html body main div.welcome-container div#animation-container svg g g g path{
+ stroke: white;
+ fill: /*om du sätter samma färg här blir texten bara outlined*/;
+}
+
 .object-item{
 display: block;
 width: 27vw;
