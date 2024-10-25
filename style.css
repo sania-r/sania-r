@@ -61,7 +61,7 @@ display: grid;
 }
 
 .navbar a{
-color: black;
+color: white;
 text-decoration: none}
 
 .navbar{
@@ -75,7 +75,7 @@ text-decoration: none}
 .nav-menu{
   margin-left: 3.5vw;
   font-family: "new-science", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
 font-size: 1.0vw;
   display: flex;
@@ -151,6 +151,7 @@ position: absolute;
 
 .project-bg{
   display: block;
+  position: relative;
   width: 90vw;
   height: 37vw;
   left: 2.8vw;
@@ -160,26 +161,14 @@ position: absolute;
   mix-blend-mode: normal;
   background-color: pink;
   position: relative;
-}
-
-.project-bg:before{
-  box-sizing: border-box;
-  backdrop-filter: blur(2vw);
-  content: "";
-  display: block;
-  width: 90vw;
-  height: 37vw;
-  border-radius: 2vw;
-  background-color: pink;
-  mix-blend-mode: normal;
-  opacity: 100%;
-  position: relative;
+  backdrop-filter: blur(21vw);
+opacity: 80%;
 }
 
 .welcome-container{
   display: block;
   grid-area: main;
-  background-color: #0db4e5;
+  background-color: black;
   width: 100vw;
   height: 40vw;
   margin: 0;
@@ -192,24 +181,29 @@ position: absolute;
 }
 
 #animation-container{
-  position: relative;
-  z-index: -2;
-  left: 30vw;
-  top: -2vw;
-  object-fit: cover;
-background-color: pink;
-}
-
-#flash-container{
   position: absolute;
   z-index: -2;
-  left: 30.5vw;
-  top: -0.5vw;
-  object-fit: cover;
-mix-blend-mode: plus-lighter;
-filter: blur(3vw);
-opacity: 0;
-transition: all ease 0.2s;
+  left: 0vw;
+  top: 5vw;
+object-fit: cover;
+background-color: black;
+
+}
+
+
+#overlay-container{
+  position: fixed;
+  top: -7vw;
+  left: -25vw;
+  z-index: -1;
+  mix-blend-mode: hard-light; /*luminosity, overlay, saturation, hard-light*/
+  opacity: 0%;
+  transition: all ease 0.7s;
+}
+
+.layer{
+  width: 100%;
+  height: auto;
 }
 
 /*designbysania color*/

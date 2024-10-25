@@ -18,64 +18,44 @@ bouncy();
 
 function scrolly(){
 var start = document.querySelector('.welcome-container');
+var neony = document.getElementById('overlay-container');
+var video = neony.querySelector('video');
+
 window.addEventListener("scroll", () => {
   const targetY = 633.5999755859375;
   const scrollY = window.scrollY; 
+
+  //parameters for welcome-container//
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
   const scalingValue = 1 + scrollY / maxScroll;
-  const opacityValue = 1 - (scrollY / targetY);
+  const opacityValue = Math.max(0, 1 - (scrollY / targetY));
+
+  //applying for welcome-container//
+  start.style.transform = `scale(${scalingValue})`;
+  start.style.opacity = opacityValue;
+
+
   const innerHeight = console.log(scrollY);
   
-  
-  
-  start.style.transform = `scale(${scalingValue})`
-  start.style.opacity = opacityValue;
-  
+//parameters for neon layer fade//
+ const targetZ = 105.5999984741211;
+ const neonyOpacity = Math.max(0, (scrollY - targetZ));
+
+ //applying neon opacity and playback//
+  if (scrollY >= targetZ) {
+    neony.style.opacity = neonyOpacity;
+    video.play();
+  } else if (scrollY < targetZ){
+    neony.style.opacity = 0;
+    video.pause();
+  }
 
 });
 }
 
 scrolly();
 
-
-
-function flashy(){
-  var flash = bodymovin.loadAnimation({
-    container: document.getElementById('flash-container'),
-    path: 'gud.json',
-    renderer: 'svg',
-    loop: true,
-    autoplay: false,
-    name: 'logons'
-  });
-
-  return flash;
-  }
-
-const flashAnimation = flashy();
-
-
-function toggleflash(){
-  const starty = document.getElementById('flash-container');
-
-  window.addEventListener("scroll", () => {
-  const targetY = 211.1999969482422;
-  const scrollY = window.scrollY;
-  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-
-  if (scrollY >= targetY) {
-    flashAnimation.play();
-    starty.style.opacity = 1;
-  } else {
-    flashAnimation.stop();
-    const opacityValue = Math.max(0, 1 - (targetY - scrollY) / targetY);
-    starty.style.opacity = opacityValue;
-  }
-  
-  });
-}
-
-toggleflash();
+//filter on scroll blur out the svg//
 
 //Other event listeners and functionality//
 
