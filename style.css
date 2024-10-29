@@ -127,43 +127,33 @@ color: #0db4e5;
 
 
 .project-container{
-top: 60vw;
+top: 50vw;
 left: 2.8vw;
 position: absolute;
   display: block;
-  width: 90vw;
-  height: 36vw;
+  backdrop-filter: blur(0.4vw);
+  background-color: rgba(0, 0, 0, 0.33);
+  border-radius: 2vw;
+ background-blend-mode: overlay;
+  width: 92vw;
+  height: 56vw;
 
 }
 
 .project-menu{
   position: absolute;
-  top: 1vw;
-  left: 0;
+  top: 5vw;
+  left: 1vw;
   display: flex;
   width: 87vw;
   height: 32vw;
  flex-wrap: wrap;
   list-style: none;
-  justify-content: space-around;
+  gap: 1vw;
+  justify-content: flex-start;
 
 }
 
-.project-bg{
-  display: block;
-  position: relative;
-  width: 90vw;
-  height: 37vw;
-  left: 2.8vw;
-  margin: 0;
-  top: 50vw;
-  border-radius: 2vw;
-  mix-blend-mode: normal;
-  background-color: pink;
-  position: relative;
-  backdrop-filter: blur(21vw);
-opacity: 80%;
-}
 
 .welcome-container{
   display: block;
