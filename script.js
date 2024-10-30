@@ -48,6 +48,7 @@ window.addEventListener("scroll", () => {
   } else if (scrollY < targetZ){
     neony.style.opacity = 0;
     video.pause();
+    video.currentTime = 0;
   }
 
 });

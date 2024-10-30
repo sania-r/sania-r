@@ -183,7 +183,7 @@ background-color: black;
 
 #overlay-container{
   position: fixed;
-  top: -7vw;
+  top: -20vw;
   left: -25vw;
   z-index: -1;
   mix-blend-mode: hard-light; /*luminosity, overlay, saturation, hard-light*/
@@ -193,7 +193,7 @@ background-color: black;
 
 .layer{
   width: 100%;
-  height: auto;
+  height: 90vw;
 }
 
 /*designbysania color*/
