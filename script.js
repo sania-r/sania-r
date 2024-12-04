@@ -17,7 +17,7 @@ bouncy();
 
 
 function scrolly(){
-var start = document.getElementById('animation-container');
+var start = document.querySelector('.welcome-container');
 var neony = document.getElementById('overlay-container');
 var video = neony.querySelector('video');
 
@@ -27,12 +27,12 @@ window.addEventListener("scroll", () => {
   const targetY = 633.5999755859375;
   const scrollY = window.scrollY; 
 
-  //parameters for animation-container//
+  //parameters for welcome-container//
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
   const scalingValue = 1 + scrollY / maxScroll;
   const opacityValue = Math.max(0, 1 - (scrollY / targetY));
 
-  //applying for animation-container//
+  //applying for welcome-container//
   start.style.transform = `scale(${scalingValue})`;
   start.style.opacity = opacityValue;
 
