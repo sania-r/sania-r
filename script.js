@@ -17,20 +17,22 @@ bouncy();
 
 
 function scrolly(){
-var start = document.querySelector('.welcome-container');
+var start = document.getElementById('animation-container');
 var neony = document.getElementById('overlay-container');
 var video = neony.querySelector('video');
+
+let played = false;  // Flag to track if the video has played once
 
 window.addEventListener("scroll", () => {
   const targetY = 633.5999755859375;
   const scrollY = window.scrollY; 
 
-  //parameters for welcome-container//
+  //parameters for animation-container//
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
   const scalingValue = 1 + scrollY / maxScroll;
   const opacityValue = Math.max(0, 1 - (scrollY / targetY));
 
-  //applying for welcome-container//
+  //applying for animation-container//
   start.style.transform = `scale(${scalingValue})`;
   start.style.opacity = opacityValue;
 
@@ -39,24 +41,26 @@ window.addEventListener("scroll", () => {
   
 //parameters for neon layer fade//
  const targetZ = 105.5999984741211;
- const neonyOpacity = Math.max(0, (scrollY - targetZ));
+ const neonyOpacity = Math.max(0, Math.min(1, (scrollY - targetZ)));
 
  //applying neon opacity and playback//
-  if (scrollY >= targetZ) {
-    neony.style.opacity = neonyOpacity;
+  if (scrollY >= targetZ && !played) {
+    neony.style.opacity = 1;
     video.play();
-  } else if (scrollY < targetZ){
-    neony.style.opacity = 0;
-    video.pause();
+    played = true;
+  }
+  
+  if (scrollY < targetZ) {
+    played = false;
     video.currentTime = 0;
+    video.pause();
+    neony.style.opacity = 0;
   }
 
 });
 }
 
 scrolly();
-
-//filter on scroll blur out the svg//
 
 //Other event listeners and functionality//
 
