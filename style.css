@@ -11,7 +11,7 @@ body{
   min-height: 100vh;
   width: 100%;
   margin: auto;
-  background-color: #F2613F;
+  background-color: #0D0D0D;
   padding: 20px;
   flex-direction: column;
   overflow-x: hidden;
@@ -96,6 +96,7 @@ width: 20vw;
 }
 
 h1{
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
   left: 20%;
   position: relative;
@@ -128,14 +129,15 @@ color: #0db4e5;
 
 
 .project-container{
-top: 60vw;
+top: 50vw;
 left: 2.8vw;
 position: absolute;
   display: block;
   backdrop-filter: blur(0.4vw);
-  background-color: rgba(0, 0, 0, 0.23);
+  background-color: rgba(251, 14, 91, 0.15);
   border-radius: 2vw;
  background-blend-mode: normal;
+ border: 2.5px solid #AF9BF5;
   width: 92vw;
   height: 56vw;
 
@@ -159,7 +161,7 @@ position: absolute;
 .welcome-container{
   display: block;
   grid-area: main;
-  background-color: orchid;
+  background-color: #0D0D0D;
   width: 100vw;
   height: 40vw;
   margin: 0;
@@ -193,7 +195,7 @@ transition: ease-in-out .1s;
   top: -20vw;
   left: 0vw;
   z-index: -1;
-  mix-blend-mode:overlay; /*luminosity, overlay, saturation, hard-light*/
+  mix-blend-mode:difference; /*luminosity, overlay, saturation, hard-light*/
   opacity: 0%;
   transition: ease-in-out 0.5s;
 }
@@ -205,17 +207,17 @@ transition: ease-in-out .1s;
 
 /*designbysania color*/
 html body main div.welcome-container div#animation-container svg g{
-  fill:black;
+  fill: #5D16E3;
 }
 
 /*ball color*/
 html body main div.welcome-container div#animation-container svg g g g path{
-fill: black;
+fill:  #5D16E3;
 }
 
 /*line color*/
 html body main div.welcome-container div#animation-container svg g g g path{
- stroke: black;
+ stroke: #5D16E3;
  fill: /*om du sätter samma färg här blir texten bara outlined*/;
 }
 
