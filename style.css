@@ -29,7 +29,7 @@ main{
 "main main main"
 ". . ."
 "footer footer footer";
-  grid-row-gap: 1vw;
+  grid-row-gap: 4vw;
   grid-column-gap: 0.5vw;
   width: 100%;
 
@@ -137,7 +137,7 @@ position: absolute;
   background-color: rgba(251, 14, 91, 0.15);
   border-radius: 2vw;
  background-blend-mode: normal;
- border: 2.5px solid #AF9BF5;
+ border: 2.5px solid white;
   width: 92vw;
   height: 56vw;
 
@@ -555,7 +555,7 @@ top: 150%;
 margin-left: 0vw;
 padding: 5vw;
 font-size: 5vw;
-color: black;
+color: white;
 }
 
 /*FOOTER DATOR mode*/
