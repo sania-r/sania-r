@@ -508,11 +508,13 @@ font-style: normal;
   width: 70vw;
   height: 10vw;
   margin-top: 40vw;
-font-family: 'helvetica';
-font-weight: 700;
-font-style: normal;
+  font-family: "neulis-sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
   font-size: 2vw;
   color: white;
+  transition: ease-in-out 2s;
+
 }
 
 .programs-container{
