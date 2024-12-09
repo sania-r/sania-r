@@ -21,6 +21,7 @@ var start = document.querySelector('.welcome-container');
 var neony = document.getElementById('overlay-container');
 var video = neony.querySelector('video');
 
+
 let played = false;  // Flag to track if the video has played once
 
 window.addEventListener("scroll", () => {
