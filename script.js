@@ -68,7 +68,7 @@ function colorchange(){
   var project = document.querySelector('.project-container');
   
 window.addEventListener("scroll", () => {
-  const targetY = 500;
+  const targetY = 605;
   const scrollY = window.scrollY; 
 
 
