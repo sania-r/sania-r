@@ -11,7 +11,7 @@ body{
   min-height: 100vh;
   width: 100%;
   margin: auto;
-  background-color: #0D0D0D;
+  background-color: white;
   padding: 20px;
   flex-direction: column;
   overflow-x: hidden;
@@ -134,12 +134,13 @@ left: 2.8vw;
 position: absolute;
   display: block;
   backdrop-filter: blur(0.4vw);
-  background-color: rgba(251, 14, 91, 0.15);
+  background-color: rgba(251, 14, 91, 0.2);
   border-radius: 2vw;
  background-blend-mode: normal;
  border: 2.5px solid white;
   width: 92vw;
   height: 56vw;
+  transition: all ease 1s;
 
 }
 
@@ -163,7 +164,7 @@ position: absolute;
   grid-area: main;
   background-color: #0D0D0D;
   width: 100vw;
-  height: 40vw;
+  height: 100vh;
   margin: 0;
   left: 0;
   top: 0;
@@ -181,7 +182,7 @@ position: absolute;
   position: absolute;
   z-index: -2;
   left: 15vw;
-  top: 5vw;
+  top: 7vw;
 object-fit: cover;
 transform:scale(1.5);
 opacity: 1;

@@ -21,6 +21,7 @@ var start = document.querySelector('.welcome-container');
 var neony = document.getElementById('overlay-container');
 var video = neony.querySelector('video');
 
+video.playbackRate = 1.0;
 
 let played = false;  // Flag to track if the video has played once
 
@@ -62,6 +63,31 @@ window.addEventListener("scroll", () => {
 }
 
 scrolly();
+
+function colorchange(){
+  var project = document.querySelector('.project-container');
+  
+window.addEventListener("scroll", () => {
+  const targetY = 500;
+  const scrollY = window.scrollY; 
+
+
+
+  //appliance//
+
+ 
+  if (scrollY > targetY){ 
+  project.style.backgroundColor = "white";
+} else {
+  project.style.backgroundColor = "rgba(251, 14, 91, 0.2)";
+}
+
+});
+
+}
+
+colorchange();
+
 
 //Other event listeners and functionality//
 
