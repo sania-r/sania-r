@@ -94,12 +94,7 @@ height: 5vw;
 width: 20vw;
 }
 
-h1{
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  left: 20%;
-  position: relative;
-}
+
 .nav-link{
   transition: 0.4s ease;
 }
@@ -962,21 +957,17 @@ font-style: normal;
 /*rumpanbar html page dator*/
 
 .casetitle{
-  font-family: 'new-science', sans-serif;
-  font-size: 6vw;
-  font-weight: 700;
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   grid-column: 1 / span 3;
-  grid-row: 1/3;
+  grid-row: 1/ span 2;
   color: #fff;
   background-color: #5D16E3;
 }
 
 
 .casemiddle{
-  font-family: 'new-science', sans-serif;
-  font-size: 6vw;
-  font-weight: 700;
   display: block;
   grid-column: 1 / span 3;
   grid-row:auto;
@@ -985,14 +976,59 @@ font-style: normal;
 }
 
 .casefinal{
-  font-family: 'new-science', sans-serif;
-  font-size: 6vw;
-  font-weight: 700;
   display: block;
   grid-column: 1 / span 3;
   grid-row:auto;
  height: auto;
   background-color: red;
+}
+
+h1{
+  grid-column: 2 / span 3;
+  grid-row: 2;
+  display: block;
+  color: #fff;
+  font-family: "new-science", sans-serif;
+  font-weight: 700;
+  font-size: 3.5vw;
+}
+
+.del1{
+  grid-column: 2 / span 3;
+  grid-row: 3;
+  display: block;
+  color: #fff;
+  font-family: "helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 1.5vw;
+}
+
+
+.del2{
+  grid-row: 3;
+  display: block;
+  color: #fff;
+  font-family: "new-science", sans-serif;
+  font-weight: 700;
+  font-size: 4vw;
+}
+
+
+.del3{
+  grid-row: 3;
+  display: block;
+  color: #fff;
+  font-family: "new-science", sans-serif;
+  font-weight: 700;
+  font-size: 4vw;
+}
+
+/*under construction text*/
+#construct{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 20%;
+  position: relative;
 }
 
 /*OFFICIELL STORLEK FÖR IPHONE*/
@@ -1056,14 +1092,6 @@ body{
 #nav-branding{
   margin-top: 0vw;
   font-size: 12vw;
-}
-
-h1{
-  margin-top: 15vw;
-  margin-left: -100vw;
-  width: 110vw;
-font-size: 5vw;
-
 }
 
   
