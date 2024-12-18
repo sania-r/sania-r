@@ -1,16 +1,20 @@
 
-
+html, body {
+  height: 100%; /* Ensure both html and body take up full height */
+  margin: 0; /* Remove default margin */
+}
 
 /*net for start*/
 body{
-  display: flex;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
   max-width: 1400px;
   min-height: 100vh;
   width: 100%;
+  height: 100%;
   margin: 0;
   background-color: white;
   padding: 0;
-  flex-direction: column;
   overflow-x: hidden;
 
 }
@@ -20,16 +24,14 @@ main{
   display: grid;
   grid-template-columns: 33vw 33vw 33vw;
   grid-template-rows: 
-  70px repeat(6, 1fr) 150px;
+  70px  repeat(4, 1fr) 150px;
   grid-template-areas: 
   "header header header" /* Row 1 */
     ". . ."               /* Row 2 - Empty */
     "main main main"      /* Row 3 */
     ". . ."               /* Row 4 - Empty */
     ". . ."               /* Row 5 - Empty */
-    ". . ."               /* Row 6 - Empty */
-    ". . ."               /* Row 7 - Empty */
-    "footer footer footer"; /* Row 8 - Footer at the bottom */
+    "footer footer footer"; /* Row 6 - Footer at the bottom */
   width: 100%;
 
 }
@@ -554,9 +556,11 @@ color: #5D16E3;
 
 /*FOOTER DATOR mode*/
 footer{
-
+position: relative;
+bottom: 0;
+top: 0;
   grid-column: 1 / span 3;
-  grid-row: 6;
+  grid-row: 5;
   text-align: center;
   width: 100%;
   padding: 50px 0;
@@ -959,27 +963,29 @@ font-style: normal;
 .casetitle{
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-column: 1 / span 3;
-  grid-row: 1/ span 2;
+  grid-row: 1 / span 2;
   color: #fff;
   background-color: #5D16E3;
 }
 
 
 .casemiddle{
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-column: 1 / span 3;
-  grid-row:auto;
- height: auto;
+  grid-row: 2 / span 3;
   background-color: greenyellow;
 }
 
 .casefinal{
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-column: 1 / span 3;
-  grid-row:auto;
- height: auto;
+  grid-row: 5 / span 7;
   background-color: red;
 }
 
