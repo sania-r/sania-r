@@ -2,41 +2,33 @@
 html, body {
   height: 100%; /* Ensure both html and body take up full height */
   margin: 0; /* Remove default margin */
+  padding: 0;
 }
 
 /*net for start*/
 body{
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr) auto;
-  max-width: 1400px;
+  grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
   min-height: 100vh;
-  width: 100%;
-  height: 100%;
-  margin: 0;
   background-color: white;
-  padding: 0;
-  overflow-x: hidden;
-
 }
 
 /*grid sizes for all HTMLS DATOR*/
 main{
   display: grid;
   grid-template-columns: 33vw 33vw 33vw;
-  grid-template-rows: 
-  70px  repeat(8, 1fr) 150px;
+  grid-template-rows: 70px auto minmax(800px, 1500px) auto 150px; /* Header, Content, Footer */
+
   grid-template-areas: 
   "header header header" /* Row 1 */
     ". . ."               /* Row 2 - Empty */
     "main main main"      /* Row 3 */
-    "main main main"      /* Row 4 */
-    "main main main"      /* Row 5 */
-    "main main main"      /* Row 6 */
-    ". . ."               /* Row 7 - Empty */
-    ". . ."               /* Row 8 - Empty */
-    ". . ."               /* Row 9 - Empty */
-    "footer footer footer"; /* Row 10 - Footer at the bottom */
+    ". . ."               /* Row 4 - Empty */
+    "footer footer footer"; /* Row 5 - Footer at the bottom */
   width: 100%;
+  height: 100%;
+  background-color: none;
+  
 
 }
 
@@ -51,7 +43,8 @@ height: 5vw;
 /*nav*/
 
 header{
-  position: absolute;
+  background-color: rgba(0, 0, 0, 0.43);
+  position: fixed;
 width: 100vw;
 left: 0;
 height: 5vw;
@@ -126,43 +119,45 @@ color: #0db4e5;
   background-color: white;
 }
 
+.project-section{
+  display: block;
 
+}
 
 .project-container{
-top: 50vw;
-left: 2.8vw;
-position: absolute;
-  display: block;
+  display: grid;
+  position: relative;
+  left: 8%;
+  top: 60vw;
+  width: 92vw;
+  height: auto;
   backdrop-filter: blur(0.4vw);
   background-color: rgba(251, 14, 91, 0.2);
   border-radius: 2vw;
  background-blend-mode: normal;
  border: 2.5px solid white;
-  width: 92vw;
-  height: 56vw;
   transition: all ease 0.8s;
 
 }
 
 .project-menu{
-  position: absolute;
-  top: 5vw;
-  left: 1vw;
   display: flex;
-  width: 87vw;
-  height: 32vw;
+  margin-left: 1.7vw;
+padding: 2vw;
+  width: 92%;
+  height:fit-content;
  flex-wrap: wrap;
   list-style: none;
-  gap: 1vw;
-  justify-content: flex-start;
+  gap: 1.5vw;
+  justify-content: center;
 
 }
 
 
 .welcome-container{
-  display: block;
+  display: grid;
   grid-area: main;
-  background-color: #0D0D0D;
+  background-color: black;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -176,10 +171,9 @@ position: absolute;
 }
 
 #animation-container{
-  display: block;
+  position: fixed;
   width: 100%;
   height: auto;
-  position: absolute;
   z-index: -2;
   left: 15vw;
   top: 7vw;
@@ -187,23 +181,27 @@ object-fit: cover;
 transform:scale(1.5);
 opacity: 1;
 transition: ease-in-out .1s;
-
 }
 
-
 #overlay-container{
-  position: relative;
-  top: -20vw;
-  left: 0vw;
-  z-index: -1;
+  display: grid;
+position: relative;
+top: 0;
+width: 100%;
+height: 100vh;
+grid-column: 1 / span 3;
+grid-row: 1 / span 2;
   mix-blend-mode:difference; /*luminosity, overlay, saturation, hard-light*/
   opacity: 0%;
   transition: ease-in-out 0.5s;
 }
 
 .layer{
+  object-fit: cover;
+  display: block;
+  position: relative;
   width: 100%;
-  height: 90vw;
+  height: 100vh;
 }
 
 /*designbysania color*/
@@ -266,9 +264,13 @@ font-style: normal;
   display: block;
   position: absolute;
 }
+
 .video{
-  width: 27vw;
+  display: block;
+position: relative;
+  width: 100%;
   height: auto;
+
 }
 
 
@@ -557,13 +559,10 @@ color: #5D16E3;
 
 /*FOOTER DATOR mode*/
 footer{
-background-color: aqua;
-display: grid;
-grid-column: 1 / span 3;
-grid-row: 10;
+  display:block;
+background-color: gray;
 position: relative;
 bottom: 0;
-top: 0;
 text-align: center;
 width: 100%;
 }
@@ -966,7 +965,7 @@ font-style: normal;
   grid-column: 1 / span 3;
   grid-row: 1 / span 5;
   color: #fff;
-  background-color: #5D16E3;
+  background-color: #fdfdfd;
 }
 
 
@@ -976,7 +975,7 @@ font-style: normal;
   grid-template-rows: repeat(3, 1fr);
   grid-column: 1 / span 3;
   grid-row: 5 / span 8;
-  background-color: greenyellow;
+  background-color: #e6e6e6;
 }
 
 .casefinal{
@@ -985,14 +984,14 @@ font-style: normal;
   grid-template-rows: repeat(2, 1fr);
   grid-column: 1 / span 3;
   grid-row: 8 / span 10;
-  background-color: red;
+  background-color: #d6d6d6;
 }
 
 h1{
   grid-column: 2 / span 3;
   grid-row: 2;
   display: block;
-  color: #fff;
+  color: black;
   font-family: "new-science", sans-serif;
   font-weight: 700;
   font-size: 3.5vw;
@@ -1002,7 +1001,7 @@ h1{
   grid-column: 2 / span 3;
   grid-row: 3;
   display: block;
-  color: #fff;
+  color: black;
   font-family: "helvetica", sans-serif;
   font-weight: 500;
   font-size: 1.5vw;
