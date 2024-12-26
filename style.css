@@ -16,14 +16,6 @@ html, body {
 body{
   display: grid;
   grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
-  background-color: white;
-}
-
-/*grid sizes for all HTMLS DATOR*/
-main{
-  display: grid;
-  grid-template-columns: 33vw 33vw 33vw;
-  grid-template-rows: 70px 380px auto minmax(100px, 1000px) 380px auto; /* Header, Content, Footer */
   grid-template-areas: 
   "header header header" /* Row 1 */
     ". . ."               /* Row 2 - Empty */
@@ -31,14 +23,18 @@ main{
     ". . ."               /* Row 4 - Empty */
     ". . ."               /* Row 5 - Empty */
     "footer footer footer"; /* Row 6 - Footer at the bottom */
-  width: 100%;
-  height: 100%;
-  background-color: none;
-  
-
+  background-color: white;
 }
 
-
+/*grid sizes for all HTMLS DATOR*/
+main{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 33vw 33vw 33vw;
+  grid-template-rows: 70px 380px auto minmax(100px, 1000px) 380px auto; /* Header, Content, Footer */
+  width: 100%;
+  height: 100%;
+}
 
 
 #brandy{
@@ -51,14 +47,14 @@ height: 5vw;
 /*nav*/
 
 header{
-  background-color: rgba(0, 0, 0, 0.43);
-  position: fixed;
+display: grid;
+grid-area: header;
+background-color: rgba(0, 0, 0, 0.43);
 width: 100vw;
 left: 0;
 height: 5vw;
-grid-area: header;
-z-index: 5;
-display: grid;}
+
+z-index: 5;}
 
 .navbar li{
   list-style: none;
@@ -161,8 +157,7 @@ padding: 2vw;
 
 
 .welcome-container{
-  display: grid;
-  grid-area: main;
+  display: block;
   background-color: black;
   width: 100vw;
   height: 100vh;
@@ -566,6 +561,7 @@ color: #5D16E3;
 /*FOOTER DATOR mode*/
 footer{
   display:block;
+  grid-area: footer;
 background-color: gray;
 position: relative;
 bottom: 0;
