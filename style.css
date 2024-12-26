@@ -1024,19 +1024,19 @@ h1{
 }
 
 .casemiddle :nth-child(1){
-  display: flex;
+  display: block;
   grid-column: 3 / span 4;
   grid-row: 2 / span 5;
-  width: 100%;
-  object-fit: cover;
+  width: 112%;
+  object-fit: contain;
 }
 
 .casemiddle :nth-child(2){
-  display: flex;
-  grid-column: 8 / span 10;
+  display: block;
+  grid-column: 9 / span 10;
   grid-row: 2 / span 5;
-  width: 100%;
-  object-fit: cover;
+  width: 80%;
+  object-fit: contain;
 }
 
 .casemiddle :nth-child(3){
