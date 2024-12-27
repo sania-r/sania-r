@@ -31,7 +31,7 @@ main{
   grid-area: main;
   display: grid;
   grid-template-columns: 33vw 33vw 33vw;
-  grid-template-rows: 70px 380px auto minmax(100px, 1000px) 380px 70px; /* Header, Content, Footer */
+  grid-template-rows: 60px 60px auto 170px 60px minmax(100px, 1000px) 380px 70px; /* Header, Content, Footer */
   width: 100%;
   height: 100%;
 }
@@ -962,10 +962,10 @@ font-style: normal;
 
 .casetitle{
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   grid-column: 1 / span 3;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 5;
   color: #fff;
   background-color: #fdfdfd;
 
@@ -974,10 +974,10 @@ font-style: normal;
 
 .casemiddle{
   display: grid;
-  grid-template-columns: repeat(18, 1fr);
-  grid-template-rows: repeat(15, 1fr);
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(25, 1fr);
   grid-column: 1 / span 3;
-  grid-row: 4;
+  grid-row: 6;
   background-color: #e6e6e6;
   position: inherit;
 }
@@ -987,59 +987,67 @@ font-style: normal;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column: 1 / span 3;
-  grid-row: 5 / span 6;
+  grid-row: 7 / span 8;
   background-color: #d6d6d6;
 }
 
-h1{
-  grid-column: 2 / span 3;
-  grid-row: 2;
-  display: block;
-  color: black;
-  font-family: "new-science", sans-serif;
-  font-weight: 700;
-  font-size: 3.5vw;
-}
 
 
 
 .casetitle :nth-child(1){
-  grid-column: 2 / span 3;
-  grid-row: 2;
+  grid-column: 3 / span 5;
+  grid-row: 2 / span 3;
   display: block;
   color: black;
   font-family: "new-science", sans-serif;
   font-weight: 500;
-  font-size: 3.5vw;
+  font-size: 3.3vw;
+  margin-top: 1.5vw;
+
 }
 
 .casetitle :nth-child(2){
-  grid-column: 2 / span 3;
-  grid-row: 3 / span 4;
+  grid-column: 3 / span 9;
+  grid-row: 5 / span 6;
   display: block;
   color: black;
   font-family: "helvetica", sans-serif;
   font-weight: 500;
-  font-size: 1.1vw;
+  font-size: 1.2vw;
+  margin-top: -2.4vw;
 }
 
 .casemiddle :nth-child(1){
   display: block;
-  grid-column: 3 / span 4;
-  grid-row: 2 / span 5;
-  width: 112%;
+  grid-column: 3 / 11;
+  grid-row: 2 / span 12;
+  width: 100%;
   object-fit: contain;
 }
 
 .casemiddle :nth-child(2){
   display: block;
-  grid-column: 9 / span 10;
-  grid-row: 2 / span 5;
-  width: 80%;
-  object-fit: contain;
+  color: black;
+  font-family: "helvetica", sans-serif;
+  font-size: 1.2vw;
+  grid-column: 12 / 23;
+  grid-row: 2 / 6;
+  line-height: 1.4vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .casemiddle :nth-child(3){
+  display: block;
+  grid-column: 12 / 23;
+  grid-row: 7 / 24;
+  width: 100%;
+
+}
+
+.casemiddle :nth-child(4){
   display: flex;
   grid-column: 2 / span 4;
   grid-row: 2 / span 5;
@@ -1052,6 +1060,7 @@ h1{
   grid-row: 4 / span 5;
   width: 10%;
 }
+
 
 .del3{
   grid-row: 3;
