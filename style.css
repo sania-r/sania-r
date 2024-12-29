@@ -969,7 +969,7 @@ font-style: normal;
   grid-column: 1 / span 3;
   grid-row: 1 / 4;
   color: #fff;
-  background-color: red;
+  background-color:#f6e6e6; 
   width: 100vw;
   height: 40vw;
 
@@ -981,11 +981,10 @@ font-style: normal;
   padding: 0;     /* Remove extra padding */
   display: grid;
 grid-template-columns: repeat(25, 1fr);
-  grid-template-rows: repeat(25, 1fr);
+  grid-template-rows: repeat(20, 1fr);
   grid-column: 1 / span 3;
-  grid-row: 6 / span 7;
+  grid-row: 4 / span 6;
   background-color: #e6e6e6;
-  position: inherit;
   align-items: start;
 }
 
@@ -1009,6 +1008,7 @@ grid-template-columns: repeat(25, 1fr);
   grid-row: 1;
   display: block;
   grid-column: 3 / 10;
+  grid-row: 3;
   color: black;
   font-family: "new-science", sans-serif;
   font-weight: 500;
@@ -1042,6 +1042,7 @@ div.title-item:nth-child(1) > h1:nth-child(1){
  max-width: 100%;
  height: auto;
  grid-column: 3/ 13;
+ grid-row: 1/2;
 }
 
 
@@ -1055,6 +1056,8 @@ div.title-item:nth-child(1) > h1:nth-child(1){
 div.title-item:nth-child(2){
   display: block;
   grid-column: 3 / 14;
+  height: auto;
+  max-width: 100%;
   grid-row: 3/ 8;
 }
 
