@@ -123,17 +123,21 @@ color: #0db4e5;
 }
 
 .project-section{
-  display: block;
+  display: grid;
+  width: fit-content;
+  height:55vw;
+  grid-row: 7;
+  padding: 5vw;
 
 }
 
 .project-container{
   display: grid;
   position: relative;
-  left: 8%;
-  top: 60vw;
-  width: 92vw;
-  height: auto;
+  width: auto;
+  height: fit-content;
+  padding-top: 3.5vw;
+  padding-bottom: 3.5vw;
   backdrop-filter: blur(0.4vw);
   background-color: rgba(251, 14, 91, 0.2);
   border-radius: 2vw;
@@ -144,15 +148,15 @@ color: #0db4e5;
 }
 
 .project-menu{
+  margin: 0;
+  padding: 0;
   display: flex;
-  margin-left: 1.7vw;
-padding: 2vw;
-  width: 92%;
+  width: 86vw;
   height:fit-content;
  flex-wrap: wrap;
   list-style: none;
-  gap: 1.5vw;
-  justify-content: center;
+  justify-content: space-evenly;
+  row-gap: 1.3vw;
 
 }
 
@@ -982,19 +986,19 @@ font-style: normal;
   padding: 0;     /* Remove extra padding */
   display: grid;
 grid-template-columns: repeat(25, 1fr);
-  grid-template-rows: auto 100px;
+  grid-template-rows: 50px auto 1fr 50px;
   grid-column: 1 / span 3;
   grid-row: 4/7;
   background-color: #e6e6e6;
   align-items: start;
-  height:fit-content;
+  height: auto;
 }
 
 .middle-item img{
   max-width: 100%; /* Prevent images from exceeding the container width */
   height: auto;    /* Maintain aspect ratio */
   display: block; 
- margin-top: 2vw;
+ margin-top: 0;
 }
 
 .final-item img{
@@ -1055,7 +1059,7 @@ div.title-item:nth-child(1) > h1:nth-child(1){
  max-width: 100%;
  height: auto;
  grid-column: 3/ 13;
- grid-row: 1/2;
+ grid-row: 2/3;
 }
 
 
@@ -1063,8 +1067,8 @@ div.title-item:nth-child(1) > h1:nth-child(1){
   display: block;
   max-width: 100%;
   grid-column: 14 / 24;
-  grid-row: 1 / 7;
-  margin-top: 2vw;
+  grid-row: 2 / 7;
+  margin-top: 0;
 
 }
 div.title-item:nth-child(2){
@@ -1092,31 +1096,41 @@ div.middle-item:nth-child(2) > p:nth-child(1){
   max-width: 100%;
   height: auto;
   grid-column: 14 / 24;
-  grid-row: 1;
-margin-top: 20vw;
+  grid-row: 2;
+  margin-top: 19vw;
  }
 
  div.middle-item:nth-child(4){
   grid-column: 3 / 13;
-  grid-row: 1;
+  grid-row: 2;
   color: black;
   font-family: "helvetica", sans-serif;
   font-weight: 500;
   font-size: 1.2vw;
   line-height: 1.5vw;
-  margin-top: 38vw;
+  margin-top: 36.7vw;
 }
  
 
 div.final-item:nth-child(1){
   display:block;
-  width: 40vw;
+  width: 100%;
   max-width: 100%;
   height: auto;
-  grid-row: 1;
+  grid-row: 1/3;
+  grid-column: 5/22;
   padding-top: 8vw;
 }
 
+div.final-item:nth-child(2){
+  display:block;
+  width: 52vw;
+  max-width: 100%;
+  height: auto;
+  grid-row: 3;
+  grid-column: 7/20;
+  margin-bottom: 5vw;
+}
 
 .del3{
   grid-row: 3;
