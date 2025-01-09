@@ -968,7 +968,7 @@ font-style: normal;
 .casetitle{
   margin: 0;      /* Remove unwanted margins */
   padding: 0;     /* Remove extra padding */
-  display: inline-grid;
+  display: grid;
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(9, 1fr);
   grid-column: 1 / span 3;
