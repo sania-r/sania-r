@@ -1149,6 +1149,55 @@ div.final-item:nth-child(3){
   font-size: 4vw;
 }
 
+/*crankmode style html*/
+
+body.crankmode div.middle-item:nth-child(1){ 
+  display: block;
+  max-width: 89%;
+  height: auto;
+  grid-column: 14/24;
+  grid-row: 2/3;
+}
+
+body.crankmode div.middle-item:nth-child(2){
+  display: block;
+  max-width: 100%;
+  grid-column: 3 / 13;
+  grid-row: 2 / 7;
+  margin-top: 0;
+}
+
+body.crankmode div.middle-item:nth-child(4){
+  grid-column: 3 / 13;
+  grid-row: 2;
+  color: black;
+  font-family: "helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 1.2vw;
+  line-height: 1.5vw;
+  margin-top: 13vw;
+}
+
+body.crankmode div.middle-item:nth-child(5){
+  grid-column: 3 / 23;
+  grid-row: 2;
+  color: black;
+  font-family: "helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 1.2vw;
+  line-height: 1.5vw;
+  margin-top: 33vw;
+}
+
+body.crankmode div.middle-item:nth-child(3){
+  display: block;
+  max-width: 100%;
+  height: auto;
+  grid-column: 3 / 24;
+  grid-row: 2;
+  margin-top: 45vw;
+}
+
 /*under construction text*/
 #construct{
   color: white;
