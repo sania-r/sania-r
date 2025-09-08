@@ -1,5 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+fetch("nav.html")
+  .then(response => response.text())
+  .then(navHTML => {
+    document.querySelector(".navbar").innerHTML = navHTML;
+  })
+  .catch(err => console.error("Failed to load nav:", err));
+
   //Animation function start//
 
 function bouncy(){
