@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+//naven//
 fetch("nav.html")
   .then(response => response.text())
   .then(navHTML => {
@@ -70,6 +71,16 @@ window.addEventListener("scroll", () => {
 }
 
 scrolly();
+
+function scrolleryy(){
+  var arrow = document.getElementById('scrollery');
+
+  arrow.addEventListener("click", () =>{
+    window.scrollTo (0, 500);
+  });
+
+}
+scrolleryy();
 
 function colorchange(){
   var project = document.querySelector('.project-container');
