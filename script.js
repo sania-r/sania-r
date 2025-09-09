@@ -76,7 +76,7 @@ function scrolleryy(){
   var arrow = document.getElementById('scrollery');
 
   arrow.addEventListener("click", () =>{
-    window.scrollTo (0, 500);
+    window.scrollTo (0, 700);
   });
 
 }
