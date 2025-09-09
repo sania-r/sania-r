@@ -76,6 +76,7 @@ text-decoration: none}
   height: 5vw;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.13);
+  backdrop-filter: blur(5px);
 }
 
 .nav-menu{
@@ -84,7 +85,6 @@ text-decoration: none}
   font-weight: 700;
   font-style: normal;
 font-size: 1.0vw;
-grid-column: 2/3;
   display: flex;
   position: absolute;
   justify-content: space-around;
@@ -133,7 +133,10 @@ color: #0db4e5;
   width: fit-content;
   height:55vw;
   grid-row: 7;
-  padding: 5vw;
+
+  margin: 7vw;
+  justify-content: center;
+
 
 }
 
@@ -144,11 +147,11 @@ color: #0db4e5;
   height: fit-content;
   padding-top: 3.5vw;
   padding-bottom: 3.5vw;
-  backdrop-filter: blur(0.4vw);
-  background-color: rgba(251, 14, 91, 0.2);
+  margin-top: -5vw;
+  backdrop-filter: blur(4px);
+  background-color: var(--logo-color);
   border-radius: 2vw;
  background-blend-mode: normal;
- border: 2.5px solid white;
   transition: all ease 0.8s;
 
 }
@@ -183,16 +186,17 @@ color: #0db4e5;
 }
 
 #animation-container{
-  position: fixed;
-  width: 100%;
+  display: block;
+  position: absolute;
+  width: 67vw;
   height: auto;
   z-index: -2;
-  left: 11vw;
-  top: 13.5vw;
-object-fit: cover;
+top: 10vw;
+left:10vw;
 transform:scale(1.5);
 opacity: 1;
 transition: ease-in-out .1s;
+
 }
 
 #overlay-container{
