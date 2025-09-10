@@ -664,14 +664,18 @@ body.threeddesign .casemiddle div:nth-child(1){
   left: 2.0%;
 }
 
-body.threeddesign .main{
+body.threeddesign > main:nth-child(1){
     grid-area: main;
   display: grid;
   grid-template-columns: 33vw 33vw 33vw;
-  grid-template-rows: 60px 60px auto 170px 60px minmax(400px, auto) auto 70px; /* Header, Content, Footer */
+  grid-template-rows: 60px 60px auto 170px 60px minmax(400px, auto) ; /* Header, Content, Footer */
   width: 100%;
   height: 100%;
   overflow: clip;
+}
+
+body.threeddesign .casemiddle{
+  height:130vw;
 }
 
 
