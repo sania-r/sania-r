@@ -80,7 +80,7 @@ text-decoration: none}
 }
 
 .nav-menu{
-  margin-left: 70vw;
+  margin-left: 73vw;
   font-family: "new-science", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -88,7 +88,7 @@ font-size: 1.0vw;
   display: flex;
   position: absolute;
   justify-content: space-around;
-  width: 24vw;
+  width: 20vw;
   align-items: center;
   padding: 1vw;
   gap: 0vw;
@@ -354,50 +354,47 @@ color: white;
 
 
 /*ABOUT ME design dator*/
-#aboutme{
+
+.frameandtextcontainer{
   display: flex;
-  color: white;
-font-family: "bebas-neue", sans-serif;
-font-weight: 400;
-font-style: normal;
-  font-size: 8vw;
-  margin-left: 5vw;
-  margin-top: 8vw;
-  grid-column: 1/5;
+  width: 100vw;
+  position: absolute;
+  height: 30vw;
+  justify-content: center;
+  top: 26%;
 }
 
-#heyhey{
-  display: block;
-  width: 50vw;
-  height: 15vw;
-font-family: "bebas-neue-pro-semiexpanded", sans-serif;
-font-weight: 700;
-font-style: italic;
-    letter-spacing: -0.3vw;
-  color: #ff0068;
-  font-size: 10vw;
-  margin-top: 10vw;
-  margin-left: -15vw;
+.frameandtextmenu{
+  display: flex;
+  width: 80vw;
+  height: 30vw;
+  justify-content: space-evenly;
 }
 
-  #meee{
-    margin-top: -10vw;
-    margin-left: 1vw;
-    width: 40vw;
-    height: 40vw;
-  }
-
-#storaabout{
-font-family: "bebas-neue-pro-semiexpanded", sans-serif;
-font-weight: 500;
-font-style: normal;
-  color: white;
-  font-size: 2.5vw;
-  grid-column: 1/3;
-  margin-top: -3vw;
-  margin-left: 5vw;
+.aboutme{
+  position: relative;
+  top: 15%;
+  display: flex;
+color: black;
+font-family: 'new-science', sans-serif;
 }
 
+.heyitsme{
+  position: absolute;
+  top: -15%;
+  font-size: 3.5vw;
+  font-weight: bolder;
+    display: flex;
+color: var(--logo-color);
+font-family: 'new-science', sans-serif;
+}
+
+#aboutmeframe{
+  display: flex;
+  width: 40vw;
+  height: 40vw;
+  grid-row: 4;
+}
 
 /*motion design HTML sidan DATOR*/
 
@@ -699,123 +696,11 @@ width: 60vw;
 
 /*THESIS design DATOR*/
 
-.infogrundthesis{
-  display: grid;
-  width: 80vw;
-  height: 50vw;
-  margin-top: 17vw;
-  margin-left: -39vw;
-  grid-template-columns: 40vw 40vw;
-  grid-template-rows: 2vw 2vw 2vw repeat(6, 10vw)
-}
-
-#thesi{
-font-family: "bebas-neue", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 8vw;
-color: white;
-grid-column: 1/5;
-margin-left: 5vw;
-}
-
-#thesiss{
-margin-left: -4.5vw;
-grid-column: 1;
-grid-row: 1/6;
-}
-
-#heree{
-   width: 40vw;
-  margin-top: 25vw;
-  margin-left: 27vw;
-font-family: "bebas-neue-pro", sans-serif;
-font-weight: 500;
-font-style: normal;
-  font-size: 2.0vw;
-  color: white;
+body.thesis div.title-item > h1:nth-child(1){
+  width: 50vw;
 }
 
 
-.year{
-  text-align: left;
-  font-size: 2vw;
-  font-family: "bebas-neue-pro", sans-serif;
-font-weight: 600;
-font-style: italic;
-  color: white;
-}
-
-.what{
-  text-align: left;
-    font-size: 2vw;
-  font-family: "bebas-neue-pro", sans-serif;
-font-weight: 600;
-font-style: italic;
-  color: white;
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.comment{
-  grid-column: 2; 
-  grid-row: 4/7;
-font-family: "bebas-neue-pro", sans-serif;
-font-weight: 500;
-font-style: normal;
-  font-size: 2vw;
-  color: white;
-}
-
-/*contact-form design DATOR*/
-.form{
-  margin-top: 5vw;
-  width: 100%;
-  height: 100%;
-}
-
-input, textarea{
-  width: 100%;
-  padding: 1vw;
-  outline: none;
-  border: none;
-  border-radius: 1vw;
-  margin: 0.5vw;
-  font-family: "bebas-neue-pro", sans-serif;
-font-weight: 500;
-font-style: normal;
-  font-size: 2.0vw;
-}
-
-#btn{
-  font-family: "bebas-neue-pro", sans-serif;
-font-weight: 500;
-font-style: normal;
-  font-size: 2.0vw;
-  margin-left: 9vw;
-  width: 10vw;
-  padding: 2vw;
-  cursor: pointer;
-}
-
-.form.active{
- display: none;
-}
-
-.thankyou{
-  display: none;
-  font-family: "bebas-neue-pro", sans-serif;
-font-weight: 500;
-font-style: normal;
-  font-size: 2.0vw;
-  color: #fff;
-}
-
-.thankyou.active{
-  width: 47vw;
-  margin-top: 14vw;
-  display: block;
-}
 
 /*rumpanbar html page dator*/
 
