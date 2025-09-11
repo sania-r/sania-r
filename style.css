@@ -700,6 +700,14 @@ body.thesis div.title-item > h1:nth-child(1){
   width: 50vw;
 }
 
+body.thesis p.title-item{ 
+  font-family: var(--font-family);
+  flex-wrap: wrap;
+}
+
+.foressay{
+  margin-top: 3vw;
+}
 
 
 /*rumpanbar html page dator*/
