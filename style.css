@@ -497,39 +497,57 @@ body.motiondesign main{
 
 /*image gallery*/
 .image-gallery{
-  display: grid;
-  width: 80vw;
-  height: 100vw;
-  grid-template-columns: 25vw 25vw 25vw;
-  grid-template-rows: 30vw 30vw 30vw 30vw 30vw 30vw;
-  margin-top: 20vw;
-  margin-left: -38vw;
+  display: block;
+  width: 100vw;
+  height: 50vw;
 }
 
 .image-menu{
-  margin-left: -3vw;
  display: flex;
-  width: 82vw;
-  height: 86vw;
+  width: 86vw;
+  gap: 1.5vw;
+  height: fit-content;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-around;
 
 }
 
+body.graphicdesign .middle-item img{
+  max-width: 200%;
+  height: 27vw;
+  width: 27vw;
+}
+
 .image-object{
-  padding: 0.5vw;
-  width: 25vw;
-  height: 25vw;
+  width: 22vw;
+  height: fit-content;
   display: flex;
 }
 
 .image{
   object-fit: cover;
- width: 100%;
-  height: 100%;
+ width: 40vw;
+  height: 30vw;
 }
 
+body.graphicdesign > main:nth-child(1){
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 33vw 33vw 33vw;
+  grid-template-rows: 60px 60px auto 170px 60px minmax(400px, auto); /* Header, Content, Footer */
+  width: 100%;
+  height: 100%;
+  overflow: clip;
+}
+
+body.graphicdesign div.middle-item:nth-child(3){
+  margin-top: 0;
+}
+
+
+body.graphicdesign div.middle-item:nth-child(4){
+  margin-top: 0;
+}
 
 
 /*tillhör thesis används där*/
