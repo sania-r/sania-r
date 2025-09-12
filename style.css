@@ -335,6 +335,16 @@ position: relative;
 
 }
 
+.animationvideo{
+  display: block;
+position: relative;
+left: 70%;
+top: -15%;
+  width: 100%;
+  height: auto;
+
+}
+
 
 a.object-link{
   display: block;
@@ -674,9 +684,10 @@ body.threeddesign .casemiddle div:nth-child(1){
   display: block;
   justify-content: space-around;
   gap: 3vw;
-  height: 39vw;
+  height: 41vw;
   position: relative;
-  left: 2.0%;
+  left: 1%;
+  width: 50vw;
 }
 
 body.threeddesign > main:nth-child(1){
@@ -690,10 +701,17 @@ body.threeddesign > main:nth-child(1){
 }
 
 body.threeddesign .casemiddle{
-  height:130vw;
+  height:190vw;
 }
 
+body.threeddesign div.threedobject:nth-child(1) > div:nth-child(1) > a:nth-child(1) > img:nth-child(1){
+  width: 57vw;
 
+}
+
+body.threeddesign .middle-item img{
+  max-width: 140%;
+}
 .threedgallery{
 display: flex;
 width: 100vw;
