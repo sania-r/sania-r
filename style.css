@@ -1055,7 +1055,7 @@ body{
   position: fixed;
   margin-top: 0;
   left: 58%;
-  top: 0;
+  top: -5vw;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.82);
   align-items: center;
@@ -1081,7 +1081,7 @@ body{
 
 #animation-container{
   width: 64vw;
-  top: 33%;
+  top: 42%;
 
 }
 
@@ -1095,9 +1095,9 @@ body{
 #brandy{
   display: block;
   position: absolute;
-  font-size: 6vw;
+  font-size: 3vw;
   left: 2vw;
-top: 47vh;
+top: 3vh;
 }
 
 #brandy > p:nth-child(1){
