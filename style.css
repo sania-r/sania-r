@@ -1079,10 +1079,33 @@ body{
   display: flex;
 }
 
-#brandy{
-  font-size: 10vw;
+#animation-container{
+  width: 64vw;
+  top: 33%;
+
 }
 
+#introduction{
+  top: 26vw;
+  left: 15%;
+  font-size: 4vw;
+  width: 70vw;
+}
+
+#brandy{
+  display: block;
+  position: absolute;
+  font-size: 6vw;
+  left: 2vw;
+top: 47vh;
+}
+
+#brandy > p:nth-child(1){
+  display: block;
+    position: absolute;
+  width: 70vw;
+  height: 10vw;
+}
   
 /*VIDEORNA gallery för iphone*/
 
