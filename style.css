@@ -1018,6 +1018,8 @@ height: fit-content;
 /*OFFICIELL STORLEK FÖR IPHONE*/
 @media only screen and (max-width: 800px)  {
 
+
+  
 .hamburger{
   position: absolute;
   display: block;
@@ -1040,12 +1042,12 @@ height: fit-content;
 }
 
   
-.nav-menu{
 .nav-menu {
+  margin-left: 100%;
+  width: 100%;
   position: fixed;
   top: 0;
-  left: -100%;              /* hidden offscreen initially */
-  width: 100%;
+  left: 0;        /* hidden offscreen initially */
   height: 100dvh;           /* iOS-safe viewport height */
   background-color: rgba(0, 0, 0, 0.82);
   display: flex;
@@ -1064,7 +1066,7 @@ height: fit-content;
 
 
 .nav-menu.active{
-  left: 0;
+  left: -100%;
 }
 
 .nav-link{
@@ -1079,7 +1081,7 @@ height: fit-content;
 
 #animation-container{
   width: 64vw;
-  top: 5%;
+  top: 
 
 }
 
@@ -1108,7 +1110,9 @@ top: 3vh;
 .project-container{
   justify-content: space-around;
   width: 80vw;
+  height:auto;
 }
+
 
 
 .imagez{
