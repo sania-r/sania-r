@@ -18,12 +18,13 @@ body{
   grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
   grid-template-areas: 
   "header header header" /* Row 1 */
-    ". . ."               /* Row 2 - Empty */
-    "main main main"      /* Row 3 */
-    ". . ."               /* Row 4 - Empty */
-    ". . ."               /* Row 5 - Empty */
-    "footer footer footer"; /* Row 6 - Footer at the bottom */
+    "main main main"      /* Row 2 */
+    "footer footer footer"; /* Row 3 - Footer at the bottom */
   background-color: white;
+    min-height: 100dvh; /* fixes iOS Safari viewport height */
+  margin: 0;
+
+
 }
 
 /*grid sizes for all HTMLS DATOR*/
@@ -34,7 +35,6 @@ main{
   grid-template-rows: 60px 60px auto 170px 60px minmax(400px, auto) auto 200px 270px; /* Header, Content, Footer */
   width: 100%;
   height: 100%;
-  overflow: clip;
 }
 
 
@@ -668,14 +668,14 @@ color: #5D16E3;
 
 /*FOOTER DATOR mode*/
 footer{
-  display:block;
-  grid-area: footer;
+display:block;
+grid-area: footer;
 background-color: gray;
-position: relative;
-bottom: 0;
 text-align: center;
-width: 100vw;
+width: 100%;
+height: 100%;
 }
+
 
 
 /*3D DESIGN HTML DATOR*/
@@ -1023,11 +1023,6 @@ height: fit-content;
 
 /*OFFICIELL STORLEK FÖR IPHONE*/
 @media only screen and (max-width: 800px)  {
-body{
-  overflow-x: clip;
-  width: 100vw;
-  height: 100vw;
-}
 
 .hamburger{
   position: absolute;
@@ -1151,13 +1146,12 @@ a.object-link{
 }
 
 main{
-    grid-area: main;
-  display: grid;
-  grid-template-columns: 33vw 33vw 33vw;
-  grid-template-rows: 60px 60px auto 170px 60px minmax(700px, auto) auto 1000px 1570px; /* Header, Content, Footer */
+  grid-area: main;
+  display: flex;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
   width: 100%;
   height: 100%;
-  overflow: clip;
 }
   
 /*VIDEORNA gallery för iphone*/
