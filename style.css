@@ -1149,6 +1149,16 @@ a.object-link{
 .captionunder{
   font-size: 3vw;
 }
+
+main{
+    grid-area: main;
+  display: grid;
+  grid-template-columns: 33vw 33vw 33vw;
+  grid-template-rows: 60px 60px auto 170px 60px minmax(700px, auto) auto 1000px 1570px; /* Header, Content, Footer */
+  width: 100%;
+  height: 100%;
+  overflow: clip;
+}
   
 /*VIDEORNA gallery för iphone*/
 
