@@ -142,8 +142,6 @@ color: #0db4e5;
   grid-row: 20;
   margin: 7vw;
   justify-content: center;
-
-
 }
 
 .project-container{
@@ -1089,6 +1087,13 @@ top: 3vh;
     position: absolute;
   width: 70vw;
   height: 10vw;
+}
+
+
+.project-section{
+  display: grid;
+  width: fit-content;
+  justify-content: center;
 }
 
 .project-container{
