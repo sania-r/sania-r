@@ -489,7 +489,7 @@ body.motiondesign footer{
   grid-area: footer;
 background-color: gray;
 text-align: center;
-width: 100vw;
+width: 100%;
 }
 
 /*grid sizes specifically for motiondesign*/
@@ -991,11 +991,13 @@ body{
   display: flex;
   position: relative;
   flex-direction: column;
-  min-height: 100vh; /* full screen height */}
+min-height: 100vh;   /* fallback */
+  min-height: 100dvh;  /* modern browsers, dynamic viewport */}
 
 main{
   flex: 1;
-  grid-area: main;}
+  grid-area: main;
+min-height: 0;}
 
 footer{
   position: relative;
