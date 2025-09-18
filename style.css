@@ -1076,7 +1076,7 @@ z-index: 99;
 #introduction{
   top: 26vw;
   left: 15%;
-  font-size: 4vw;
+  font-size: 6vw;
   width: 70vw;
 }
 
@@ -1101,9 +1101,13 @@ top: 3vh;
 .project-container{
   justify-content: space-around;
   width: 80vw;
+  margin-top: 150%;
   height:auto;
 }
 
+#animation-container{
+  margin-top: 30%;
+}
 
 
 .imagez{
