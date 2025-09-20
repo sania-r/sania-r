@@ -136,26 +136,18 @@ color: #0db4e5;
   background-color: white;
 }
 
-.project-section{
-  display: flex;
-  width: fit-content;
-  grid-row: 2;
-  justify-content: center;
-}
 
 .project-container{
   display: grid;
   position: relative;
-  margin-top: 60%;
-  width: auto;
+top: 58%;
+left: 8%;
+  width: fit-content;
   backdrop-filter: blur(4px);
   background-color: var(--logo-color);
   border-radius: 2vw;
  background-blend-mode: normal;
   transition: all ease 0.8s;
-  grid-row: 5;
-
-
 }
 
 .project-menu{
@@ -1060,13 +1052,11 @@ footer{
 
   #scrollery{
 display: block;
-position: absolute;
-width: 10%;
-height: 10%;
-top: 13%;
-margin-top: 10%;
-left: 37%;
-height: fit-content;
+position: relative;
+top: -50%;
+left: 30%;
+width: fit-content;
+height: auto;
 mix-blend-mode: difference;
 backdrop-filter: blur(8px);
 z-index: 99;
@@ -1105,7 +1095,8 @@ top: 3vh;
 .project-container{
   justify-content: space-around;
   width: 100%;
-  margin-top: 150%;
+  margin-top: -150%;
+  left: 3%;
   height:auto;
 }
 
