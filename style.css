@@ -190,12 +190,12 @@ color: #0db4e5;
 }
 
 #animation-container{
-  display: grid;
+  display: flex;
   position: relative;
-  width: 100%;
-  top: -72%;
-  left: -4%;
-  height: 60%;
+  width: 70%;
+  top: -60%;
+  left: 9%;
+  height: auto;
   z-index: -2;
 transform:scale(1.5);
 opacity: 1;
@@ -257,8 +257,8 @@ z-index: 99;
   color:white;
   font-size: 3.3vw;
 left: 30%;
-top: 15%;
-  width: 60%;
+top: 13%;
+  width: 63%;
 }
 
 /*designbysania color*/
