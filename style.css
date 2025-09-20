@@ -30,9 +30,9 @@ body{
 main{
   grid-area: main;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto repeat(15, auto) auto;
-  width: 100%;
+display: grid;
+  min-height: 100vh;
+  grid-auto-rows: 1fr; /* each row splits evenly */
 }
 
 /*FOOTER DATOR mode*/
@@ -137,10 +137,9 @@ color: #0db4e5;
 }
 
 .project-section{
-  display: grid;
+  display: flex;
   width: fit-content;
-  grid-row: 20;
-  margin: 7vw;
+  grid-row: 2;
   justify-content: center;
 }
 
@@ -193,10 +192,10 @@ color: #0db4e5;
 #animation-container{
   display: grid;
   position: relative;
-  width: 67vw;
-  top: -92%;
-  left: 10%;
-  height: 100%;
+  width: 100%;
+  top: -72%;
+  left: -4%;
+  height: 60%;
   z-index: -2;
 transform:scale(1.5);
 opacity: 1;
@@ -256,10 +255,10 @@ z-index: 99;
   position: relative;
   font-family: var(--font-family);
   color:white;
-  font-size: 2.3vw;
-  top: 80%;
-  left: 40%;
-  width: 50%;
+  font-size: 3.3vw;
+left: 30%;
+top: 15%;
+  width: 60%;
 }
 
 /*designbysania color*/
