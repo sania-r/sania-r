@@ -1108,10 +1108,10 @@ z-index: 99;
   display: flex;
   position: relative;
   left: 10%;
-  top: 5%;
+  top: 30%;
   max-height: fit-content;
   font-size: 2.0em;
-  width: 80%;
+  width: 100%;
 }
 
 
@@ -1136,8 +1136,8 @@ top: 3vh;
 .project-container{
   justify-content: space-around;
   width: 100%;
-  margin-top: -150%;
-  left: 3%;
+  top: -5%;
+  left: 10%;
   height:auto;
 }
 
@@ -1162,7 +1162,7 @@ top: 3vh;
   margin-top: 20%;
 top: 50%;
   }
-
+  
 
 .imagez{
   object-fit: cover;
@@ -1196,7 +1196,6 @@ a.object-link{
   
 /*VIDEORNA gallery för iphone*/
 
-/*video gallery*/
 .video-gallery{
 display: block;
 width: 70vw;
