@@ -1107,15 +1107,16 @@ z-index: 99;
 }
 
 
-#introduction{
+#introduction > p:nth-child(1){ 
   display: flex;
   position: relative;
-  left: 10dvh;
-  padding-top: 40dvh;
-  max-height: fit-content;
-  font-size: 2.0em;
+  left: 10%;
+  top: 30%;
+  font-size: 1.5em;
   width: 100%;
 }
+
+
 
 
 #brandy{
@@ -1143,9 +1144,6 @@ top: 3vh;
   gap:3%;
 }
 
-.project-menu{
-
-}
 
 #animation-container{
   position: fixed;
