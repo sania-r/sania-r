@@ -1110,8 +1110,8 @@ z-index: 99;
 #introduction{
   display: flex;
   position: relative;
-  left: 10%;
-  top: 40dvh;
+  left: 10dvh;
+  padding-top: 40dvh;
   max-height: fit-content;
   font-size: 2.0em;
   width: 100%;
