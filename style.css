@@ -1111,7 +1111,7 @@ z-index: 99;
   display: flex;
   position: relative;
   left: 10%;
-  top: 30%;
+  top: 40%;
   max-height: fit-content;
   font-size: 2.0em;
   width: 100%;
@@ -1144,7 +1144,7 @@ top: 3vh;
 }
 
 .project-menu{
-  
+
 }
 
 #animation-container{
