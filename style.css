@@ -1027,9 +1027,12 @@ min-height: 100vh;   /* fallback */
 
 main{
   flex: 1;
-  grid-area: main;
 min-height: 0;
-display: grid;}
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;   /* 3 columns */
+  grid-auto-rows: minmax(200px, auto); /* each new row is at least 100px tall */
+}
 
 footer{
   position: relative;
@@ -1136,7 +1139,7 @@ top: 3vh;
 .project-container{
   justify-content: space-around;
   width: 100%;
-  top: 20%;
+  top: -5%;
   left: 10%;
   height:auto;
 }
@@ -1196,6 +1199,7 @@ a.object-link{
   
 /*VIDEORNA gallery för iphone*/
 
+/*video gallery*/
 .video-gallery{
 display: block;
 width: 70vw;
