@@ -180,7 +180,6 @@ height: 5vw;
 header{
 display: grid;
 grid-area: header;
-background-color: rgba(0, 0, 0, 0.43);
 width: 100vw;
 left: 0;
 height: 5vw;
@@ -201,16 +200,17 @@ text-decoration: none}
   position: fixed;
   height: 5vw;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.13);
+  background-color: rgba(0, 0, 0, 0.33);
   backdrop-filter: blur(5px);
 }
 
 .nav-menu{
-  margin-left: 73vw;
+left: 73%;
   font-family: "new-science", sans-serif;
   font-weight: 700;
   font-style: normal;
 font-size: 1.0vw;
+top: -5%;
   display: flex;
   position: absolute;
   justify-content: space-around;
@@ -1011,7 +1011,9 @@ height: fit-content;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   left: 20%;
-  position: relative;
+  position: absolute;
+  top: -4%;
+  width: fit-content;
 }
 
 /*OFFICIELL STORLEK FÖR IPHONE*/
@@ -1060,7 +1062,19 @@ footer{
   transform: translateY(-2vw) rotate(-45deg);
 }
 
-  
+#nav-branding{ 
+  width: 26%;
+}
+
+
+header{
+  height:41%;
+
+}
+.navbar{
+  height:15%;
+  width: 100vw;
+}
 .nav-menu {
   margin-left: 100%;
   width: 100%;
@@ -1129,13 +1143,13 @@ z-index: 99;
   font-size: 3vw;
   left: 2vw;
 top: 3vh;
+width: 100%;
+
 }
 
 #brandy > p:nth-child(1){
-  display: block;
-    position: absolute;
-  width: 70vw;
-  height: 10vw;
+  width: 100%;
+  height: fit-content;
 }
 
 
