@@ -1015,7 +1015,7 @@ height: fit-content;
 }
 
 /*OFFICIELL STORLEK FÖR IPHONE*/
-@media only screen and (max-width: 800px)  {
+@media only screen and (max-width: 800px) {
 
 
 body{
@@ -1213,4 +1213,5 @@ margin-top: 20vw;
 .videos-item{
   width: 100%;
   height: 100%;
+}
 }
