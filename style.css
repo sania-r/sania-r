@@ -271,15 +271,14 @@ left: 8%;
 
 .project-menu{
   margin: 0;
-  padding: 0;
+  position: relative;
   display: flex;
   width: 86vw;
-  margin-top: 2vw;
   height:fit-content;
  flex-wrap: wrap;
   list-style: none;
   justify-content: space-evenly;
-  row-gap: 1.3vw;
+  grid-row-gap: 1vw;
 
 }
 
@@ -1137,6 +1136,7 @@ z-index: 99;
 }
 
 
+
 #brandy{
   display: block;
   position: absolute;
@@ -1154,10 +1154,9 @@ width: 100%;
 
 
 .project-menu{
-  display: block;
-  width: 100vw;
-  justify-content: space-around;
-}
+  display: flex;
+  width: 69vw;
+  justify-content: space-between;}
 
 #animation-container{
   position: fixed;
