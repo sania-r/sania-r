@@ -1186,6 +1186,8 @@ height: 80vw;
 }
 
 .text{
+  display: block;
+  opacity: 1;
   width: 100%;
   font-size: 1.0em;
   width: 80vw;
@@ -1193,6 +1195,7 @@ height: 80vw;
   text-align: center;
   margin-top: 0;
 }
+
 
 .captionunder{
   font-size: 0.8em;
