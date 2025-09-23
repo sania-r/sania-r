@@ -1201,6 +1201,68 @@ height: 80vw;
   font-size: 0.8em;
 }
 
+/*RUMPANBAR MOBILE*/
+body.rumpanbar > main:nth-child(2){
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;   /* 3 columns */
+  grid-auto-rows: minmax(200px, auto); /* each new row is at least 100px tall */
+}
+
+div.title-item:nth-child(1) > h1:nth-child(1){
+  font-size: 2em;
+  width: 100vw;
+  height: auto;
+}
+
+.casetitle > p:nth-child(2){
+  font-size: 1em;
+  width: 90vw;
+  height: auto;
+}
+
+body.rumpanbar .casemiddle{
+grid-template-rows: auto repeat(15, 200px);
+grid-row: 2/7;
+}
+
+body.rumpanbar .casefinal{
+grid-template-rows: repeat(5, auto);
+grid-row: 7;
+}
+
+
+.casemiddle div:nth-child(1){
+ display: block;
+ max-width: 100%;
+ height: auto;
+ grid-column: 3/ 24;
+ grid-row: 4/5;
+}
+
+.casemiddle div:nth-child(3){
+  grid-row: 5;
+  grid-column: 3/23;
+}
+
+.casemiddle div:nth-child(2){
+
+grid-column: 3/17;
+}
+
+div.middle-item:nth-child(2) > p:nth-child(1){
+  font-size: 1em;
+  width: 100vw;
+  line-height: 1.1em;
+}
+
+div.middle-item:nth-child(4) {
+  font-size: 1em;
+  height: auto;
+  grid-row: 4/5;
+grid-column: 3/20;
+line-height:1em;}
+
 
   
 /*VIDEORNA gallery för iphone*/
