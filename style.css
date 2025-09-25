@@ -1356,6 +1356,7 @@ padding-bottom: 5%;
 body.crankmode .casefinal{
 grid-row: auto;
 grid-template-rows:  auto 1fr;
+padding-bottom: 5%;
 }
 
 
