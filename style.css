@@ -1328,6 +1328,42 @@ div.final-item:nth-child(2){
   grid-row: 8;
   padding-bottom: 10vw;
 }
+
+/*crank mode MOBILE*/
+body.crankmode .casetitle{
+  padding-bottom: 5%;
+  grid-row: auto;
+}
+
+body.crankmode .casemiddle{
+  padding-bottom: 5%;
+  grid-template-rows: auto repeat(4, 200px);
+  grid-row: auto;
+}
+
+body.crankmode div.middle-item:nth-child(1){
+  grid-column: 3/24;
+  grid-template-rows: repeat(3, auto);
+  grid-row: 1;
+}
+body.crankmode div.middle-item:nth-child(2){
+  grid-column: 3/24;
+    grid-template-rows: repeat(3, auto);
+  grid-row: 2;
+}
+
+body.crankmode div.middle-item:nth-child(3){
+  grid-row: 5;
+  margin-top: -10%;
+}
+
+body.crankmode div.final-item:nth-child(1){
+  grid-column: 3/24;
+    font-family: arial;
+  font-size: 0.9em;
+}
+
+
 /*VIDEORNA gallery för iphone*/
 
 /*video gallery*/
