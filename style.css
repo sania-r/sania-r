@@ -1342,7 +1342,7 @@ body.crankmode > main:nth-child(1) {
 
 body.crankmode .casetitle{
 grid-row: auto;
-padding-bottom: 5%;
+padding-bottom: 25%;
 height: auto;
 }
 
