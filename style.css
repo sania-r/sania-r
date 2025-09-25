@@ -1354,7 +1354,9 @@ body.crankmode div.middle-item:nth-child(2){
 
 body.crankmode div.middle-item:nth-child(3){
   grid-row: 5;
-  margin-top: -10%;
+  margin-top: 10%;
+     font-family: arial;
+  font-size: 0.9em;
 }
 
 body.crankmode div.final-item:nth-child(1){
