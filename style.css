@@ -1332,6 +1332,14 @@ div.final-item:nth-child(2){
 }
 
 /*crank mode MOBILE*/
+
+body.crankmode > main:nth-child(1) {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;   /* 3 columns */
+  grid-auto-rows: auto;
+}
+
 body.crankmode .casetitle{
 grid-row: auto;
 padding-bottom: 5%;
