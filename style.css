@@ -1236,6 +1236,7 @@ height: auto;
 
 body.rumpanbar .casemiddle{
 grid-row: auto;
+grid-template-rows: repeat(5, auto);
 height: auto;
 padding-bottom: 5%;
 }
