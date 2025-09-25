@@ -1292,6 +1292,7 @@ div.middle-item:nth-child(2){
   grid-row: 6;
   margin-top: -5%;
   grid-column: 3/24;
+  grid-row: auto;
 }
 
 div.middle-item:nth-child(2) > a:nth-child(1) > img:nth-child(1){
@@ -1337,7 +1338,7 @@ body.crankmode .casetitle{
 
 body.crankmode .casemiddle{
   padding-bottom: 5%;
-  grid-template-rows: auto repeat(4, 200px);
+  grid-template-rows: repeat(5, auto);
   grid-row: auto;
 }
 
@@ -1345,20 +1346,26 @@ body.crankmode div.middle-item:nth-child(1){
   grid-column: 3/24;
   grid-template-rows: repeat(3, auto);
   grid-row: 1;
+  height: auto;
+  width: auto;
 }
 body.crankmode div.middle-item:nth-child(2){
   grid-column: 3/24;
-    grid-template-rows: repeat(3, auto);
-  grid-row: 2;
+  grid-row: auto;
 }
 
 body.crankmode div.middle-item:nth-child(3){
-  grid-row: 5;
-  margin-top: 10%;
-     font-family: arial;
-  font-size: 0.9em;
-}
+  grid-row: 3;
+  padding-top: 5%;
+  margin-top: 0;
+  height: auto;
 
+}
+div.middle-item:nth-child(2) > a:nth-child(2) > img:nth-child(1){
+  width: auto;
+  grid-row: auto;
+  height: auto;
+}
 body.crankmode div.final-item:nth-child(1){
   grid-column: 3/24;
     font-family: arial;
