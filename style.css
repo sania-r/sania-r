@@ -1359,6 +1359,8 @@ body.crankmode div.middle-item:nth-child(3){
   padding-top: 5%;
   margin-top: 0;
   height: auto;
+    font-family: arial;
+  font-size: 0.9em;
 
 }
 div.middle-item:nth-child(2) > a:nth-child(2) > img:nth-child(1){
