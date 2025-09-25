@@ -1237,6 +1237,7 @@ height: auto;
 body.rumpanbar .casemiddle{
 grid-row: auto;
 height: auto;
+padding-bottom: 5%;
 }
 
 body.rumpanbar .casefinal{
