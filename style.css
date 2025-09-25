@@ -1333,15 +1333,24 @@ div.final-item:nth-child(2){
 
 /*crank mode MOBILE*/
 body.crankmode .casetitle{
-  padding-bottom: 5dvh;
-  grid-row: auto;
+grid-row: auto;
+padding-bottom: 5%;
+height: auto;
 }
 
 body.crankmode .casemiddle{
-  padding-bottom: 5%;
-  grid-template-rows: repeat(5, auto);
-  grid-row: auto;
+grid-row: auto;
+grid-template-rows: repeat(5, auto);
+height: auto;
+padding-bottom: 5%;
 }
+
+body.crankmode .casefinal{
+grid-row: auto;
+grid-template-rows:  auto 1fr;
+}
+
+
 
 body.crankmode div.middle-item:nth-child(1){
   grid-column: 3/24;
