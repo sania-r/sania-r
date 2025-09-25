@@ -1333,7 +1333,7 @@ div.final-item:nth-child(2){
 
 /*crank mode MOBILE*/
 body.crankmode .casetitle{
-  padding-bottom: 15%;
+  padding-bottom: 5dvh;
   grid-row: auto;
 }
 
