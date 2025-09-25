@@ -1234,14 +1234,12 @@ height: auto;
 }
 
 body.rumpanbar .casemiddle{
-grid-template-rows: repeat(8, auto);
-grid-row: 3/8;
+grid-row: auto;
 height: auto;
 }
 
 body.rumpanbar .casefinal{
-grid-template-rows: repeat(5, auto);
-grid-row: 8;
+grid-row: auto;
 }
 
 div.middle-item:nth-child(1){ 
