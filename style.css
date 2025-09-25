@@ -1211,7 +1211,7 @@ body.rumpanbar > main:nth-child(2){
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;   /* 3 columns */
-  grid-auto-rows: minmax(200px, auto); /* each new row is at least 100px tall */
+  grid-auto-rows: auto; /* each new row is at least auto tall*/
 }
 
 div.title-item:nth-child(1) > h1:nth-child(1){
@@ -1223,24 +1223,25 @@ div.title-item:nth-child(1) > h1:nth-child(1){
 .casetitle > p:nth-child(2){
   font-size: 0.9em;
   width: auto;
-  grid-column: 3/24;
+  grid-row: 4;
   height: auto;
+  grid-column: 3/24;
 }
 
 body.rumpanbar .casetitle{
-grid-row: 1;
+grid-row: auto;
 height: auto;
 }
 
 body.rumpanbar .casemiddle{
 grid-template-rows: repeat(8, auto);
-grid-row: 2/8;
+grid-row: 3/8;
 height: auto;
 }
 
 body.rumpanbar .casefinal{
 grid-template-rows: repeat(5, auto);
-grid-row: span 7;
+grid-row: 8;
 }
 
 div.middle-item:nth-child(1){ 
