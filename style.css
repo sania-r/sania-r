@@ -569,7 +569,7 @@ grid-column: 3/24;
 /*THESIS design DATOR*/
 
 body.thesis div.title-item > h1:nth-child(1){
-  width: 50vw;
+  width: 100vw;
 }
 
 body.thesis p.title-item{ 
@@ -1365,5 +1365,35 @@ body.motiondesign div.title-item:nth-child(2){
   font-family: arial;
   grid-column: 3/24;
   grid-row: 4;
+}
+
+/*THESIS MOBILE*/
+
+body.thesis div.title-item:nth-child(1){
+  grid-column: 3/24;
+  width: 100%;
+}
+body.thesis div.title-item:nth-child(2){
+  color: black;
+  font-family: arial;
+  grid-column: 3/24;
+  grid-row: 4;
+}
+
+/*GRAPHIC DESIGN MOBILE*/
+.image-menu{
+  display: block;
+  margin-left: 10%;
+}
+
+body.graphicdesign .middle-item img{
+  height: auto;
+  width: 70%;
+
+}
+
+.image-object{
+  width:100%;
+  padding-top: 10%;
 }
 }
