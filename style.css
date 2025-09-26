@@ -1456,4 +1456,19 @@ body.motiondesign .casemiddle div:nth-child(1){
   display: block;
   
 }
+
+body.motiondesign > .motiondesigny{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;   /* 3 columns */
+  grid-auto-rows: minmax(200px, auto); /* each new row is at least 100px tall */
+}
+
+body.motiondesign div.title-item:nth-child(2){
+  display: block;
+  color: black;
+  font-family: arial;
+  grid-column: 3/24;
+  grid-row: 4;
+}
 }
