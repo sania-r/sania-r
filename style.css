@@ -1026,20 +1026,13 @@ body{
 min-height: 100vh;   /* fallback */
   min-height: 100dvh;  /* modern browsers, dynamic viewport */}
 
-main{
-  flex: 1;
-min-height: 0;
-  grid-area: main;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;   /* 3 columns */
-  grid-auto-rows: minmax(200px, auto); /* each new row is at least 100px tall */
-}
 
-body.index > .indexy{
+
+body.index > .indexy{ /*alltså MAIN för index*/
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;   /* 3 columns */
-  grid-auto-rows: minmax(200dvh, auto); /* each new row is at least 100px tall */
+  grid-auto-rows: minmax(200dvh, auto); /* each new row is at least 200 tall */
 
 }
 
