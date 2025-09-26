@@ -1381,6 +1381,8 @@ body.thesis div.title-item:nth-child(2){
 }
 
 /*GRAPHIC DESIGN MOBILE*/
+
+
 .image-menu{
   display: block;
   margin-left: 10%;
@@ -1396,4 +1398,43 @@ body.graphicdesign .middle-item img{
   width:100%;
   padding-top: 10%;
 }
+
+/*ABOUT ME MOBILE*/
+
+
+body.about main.aboutme{ 
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;   /* 3 columns */
+  grid-auto-rows: minmax(200px, auto); /* each new row is at least 100px tall */
+  width: 100%;
+
+}
+
+
+body.about .casemiddle{
+  grid-row: auto;
+  grid-column: auto;
+  height: auto;
+}
+
+.heyitsme{
+  font-size: 2em;
+  margin-top: -5%;
+}
+
+#aboutmeframe{
+  position: relative;
+  left: -5%;
+  width: 50%;
+  height: auto;
+}
+
+.aboutme{
+  display: block;
+  font-size: 0.9em;
+
+}
+
+
 }
