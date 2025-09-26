@@ -74,13 +74,14 @@ body.graphicdesign .casemiddle{
 
 
 body.motiondesign .casetitle{ 
-  grid-row:1/6;
+  grid-row:auto;
   height: fit-content;
 }
 
 body.motiondesign .casemiddle{ 
-  grid-row: 6;
+  grid-row: auto;
   height: fit-content;
+  overflow-y: clip;
 }
 
 body.motiondesign .casemiddle div:nth-child(1){
@@ -524,7 +525,7 @@ font-family: 'new-science', sans-serif;
 
   display:flex;
   width: 80vw;
-  height: 50vw;
+  height: fit-content;
 }
 
 .video-menu{
@@ -578,16 +579,6 @@ text-align: center;
 width: 100%;
 }
 
-/*grid sizes specifically for motiondesign*/
-body.motiondesign main{
-  grid-area: main;
-  display: grid;
-  grid-template-columns: 33vw 33vw 33vw;
-  grid-template-rows: 60px 60px auto 170px 60px minmax(400px, auto); /* Header, Content, Footer */
-  width: 100%;
-  height: 100%;
-  overflow: clip;
-}
 
 
 
@@ -1435,33 +1426,34 @@ body.threeddesign div.middle-item:nth-child(1) > a:nth-child(1) > img:nth-child(
 }
 /*VIDEORNA gallery för iphone*/
 
-/*video gallery*/
+
 .video-gallery{
 display: block;
-width: 70vw;
-height: 40vw;
-margin-top: 20vw;
-  margin-left: 5vw;
+
 }
 
 .video-menu{
-  gap: 10vw;
+  display: block;
+  left: 0;
   list-style: none;
-  width: 70vw;
-  height: 50vw;
+  width: 100%;
+ height:fit-content;
 }
 
 .video-object{
-  width: 77vw;
-  height: 45vw;
+  width: 100%;
+  height: 40dvh;
+  padding-top: 10%;
 }
 
-.videos{
-  width: 77vw;
-  height: 45vw; 
-}
 
 .videos-item{
-  width: 100%;
+  width: 100vw;
   height: 100%;
+}
+
+body.motiondesign .casemiddle div:nth-child(1){
+  display: block;
+  
+}
 }
