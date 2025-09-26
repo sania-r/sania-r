@@ -450,8 +450,6 @@ position: relative;
 .animationvideo{
   display: block;
 position: relative;
-left: 70%;
-top: -15%;
   width: 100%;
   height: auto;
 
@@ -705,22 +703,14 @@ body.threeddesign div.threedobject:nth-child(1) > div:nth-child(1) > a:nth-child
 body.threeddesign .middle-item img{
   max-width: 140%;
 }
-.threedgallery{
-display: flex;
-width: 100vw;
-height: fit-content;
-}
 
-.threedmenu{
-display: flex;
-justify-content: space-around;
-width: 85vw;
-height: auto;
-}
 
-.threedobject{
-display: flex;
-width: 60vw;
+body.threeddesign div.title-item:nth-child(2){
+  color: black;
+  font-family: arial;
+  font-size: 0.9em;
+grid-row: 4;
+grid-column: 3/24;
 }
 
 /*THESIS design DATOR*/
@@ -1037,8 +1027,6 @@ body.index > .indexy{ /*alltså MAIN för index*/
 }
 
 
-
-
 footer{
   position: relative;
   margin-top: auto;
@@ -1330,7 +1318,7 @@ div.final-item:nth-child(2){
   padding-bottom: 10vw;
 }
 
-/*crank mode MOBILE*/
+/*CRANK MODE MOBILE*/
 body.crankmode .casetitle{
   padding-bottom: 10%;
   grid-row: auto;
@@ -1380,7 +1368,67 @@ body.crankmode div.final-item:nth-child(1){
   font-size: 0.9em;
 }
 
+/*3D DESIGN MOBILE*/
 
+body.threeddesign div.title-item:nth-child(2){
+  color: black;
+  font-family: arial;
+  font-size: 0.9em;
+grid-row: 4;
+grid-column: 3/24;
+}
+
+
+body.threeddesign div.middle-item:nth-child(1){
+  display: block;
+  width: 100%;
+  height:fit-content;
+  color: black;
+  font-family: arial;
+  font-size: 0.9em;
+  grid-column: 3/24;
+
+}
+
+body.threeddesign .casemiddle{
+  grid-template-rows: repeat(5, auto);
+  height: auto;
+
+}
+
+body.threeddesign div.middle-item:nth-child(2){
+  grid-row: 5/6;
+  grid-column: 3/24;
+  padding-top: 10%;
+}
+
+body.threeddesign div.middle-item:nth-child(3){
+  grid-row: 6;
+  padding-bottom: 10%;
+  grid-column: 3/24;
+}
+
+body.threeddesign div.middle-item:nth-child(3) > a:nth-child(1) > img:nth-child(1){ 
+  max-width: 100%;
+}
+
+body.threeddesign div.middle-item:nth-child(2) > a:nth-child(1) > img:nth-child(1){
+  max-width: 100%;
+}
+body.threeddesign div.middle-item:nth-child(4) > a:nth-child(1) > img:nth-child(1){
+  height: auto;
+}
+
+body.threeddesign div.middle-item:nth-child(1) > a:nth-child(1) > img:nth-child(1){
+  max-width: 100%;
+}
+
+body.threeddesign .animationvideo{
+  top: 0;
+  right: 0;
+  max-width: 100%;
+
+}
 /*VIDEORNA gallery för iphone*/
 
 /*video gallery*/
