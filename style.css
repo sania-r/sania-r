@@ -1035,7 +1035,13 @@ min-height: 0;
   grid-auto-rows: minmax(200px, auto); /* each new row is at least 100px tall */
 }
 
+body.index > .indexy{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;   /* 3 columns */
+  grid-auto-rows: minmax(200dvh, auto); /* each new row is at least 100px tall */
 
+}
 
 
 
