@@ -1429,6 +1429,10 @@ body.threeddesign .animationvideo{
   max-width: 100%;
 
 }
+
+body.threeddesign div.middle-item:nth-child(1) > a:nth-child(1) > img:nth-child(1){
+  margin: 2vw 0vw 2vw 2vw;
+}
 /*VIDEORNA gallery för iphone*/
 
 /*video gallery*/
