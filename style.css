@@ -1325,7 +1325,7 @@ body.crankmode .casetitle{
 }
 
 body.crankmode .casemiddle{
-  padding-bottom: 5%;
+  padding-bottom: 15%;
   grid-template-rows: repeat(5, auto);
   grid-row: auto;
 }
