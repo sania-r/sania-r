@@ -1226,7 +1226,7 @@ body.crankmode .casefinal{
 
 body.crankmode div.middle-item:nth-child(1){
   grid-column: 3/24;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
   grid-row: 1;
   height: auto;
   width: auto;
@@ -1255,6 +1255,12 @@ body.crankmode div.final-item:nth-child(1){
     font-family: arial;
   font-size: 0.9em;
 }
+
+
+  body.crankmode div.casemiddle {
+    grid-column: unset !important;
+    grid-row: unset !important;
+    width: 100vw;
 
 /*3D DESIGN MOBILE*/
 
