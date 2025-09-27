@@ -491,9 +491,7 @@ color: white;
 }
 
 .aboutme{
-  position: relative;
-  top: 15%;
-  display: flex;
+  display: block;
 color: black;
 font-family: 'new-science', sans-serif;
 }
@@ -715,13 +713,12 @@ div.middle-item:nth-child(2) > p:nth-child(1){
 }
 
 
- .casemiddle div:nth-child(3){
+ body.about .casemiddle div:nth-child(3){
   display: block;
   max-width: 100%;
   height: auto;
-  grid-column: 14 / 24;
-  grid-row: 2;
-  margin-top: 19vw;
+
+
  }
 
  div.middle-item:nth-child(4){
@@ -1464,19 +1461,17 @@ body.graphicdesign .middle-item img{
 
 
 body.about main.aboutme{ 
-  grid-area: main;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;   /* 3 columns */
-  grid-auto-rows: minmax(200px, auto); /* each new row is at least 100px tall */
-  width: 100%;
+ 
+  grid-auto-rows:auto;
+
 
 }
 
 
 body.about .casemiddle{
-  grid-row: auto;
-  grid-column: auto;
-  height: auto;
+width: 100vw;
+height: 100dvh;
+
 }
 
 .heyitsme{
@@ -1492,10 +1487,13 @@ body.about .casemiddle{
 }
 
 .aboutme{
-  display: block;
+
   font-size: 0.9em;
 
 }
 
-
+div.aboutme > p:nth-child(1){ 
+margin-top: -90%;
+padding-left: 50%;
+width: 50vw;
 }
