@@ -1224,6 +1224,17 @@ div.final-item:nth-child(2){
   padding-bottom: 10vw;
 }
 
+body.rumpanbar div.final-item:nth-child(1) > a:nth-child(2) > img:nth-child(1){
+ max-width: 100%;
+ margin-left: 0;
+}
+
+
+
+body.rumpanbar .final-item img{
+  max-height: 70vw;
+}
+
 /*CRANK MODE MOBILE*/
 
 
@@ -1277,6 +1288,19 @@ body.crankmode div.final-item:nth-child(1){
   font-size: 0.9em;
 }
 
+body.crankmode .final-item > a:nth-child(2) > img:nth-child(1){
+  max-width: 100%;
+  margin-left: 13%;
+
+}
+body.crankmode .final-item img{
+  max-height: 70vw;
+}
+
+body.crankmode .final-item > a:nth-child(3) > img:nth-child(1){
+  margin-left: 18.5%;
+  max-width: 100%;
+}
 
 
 
