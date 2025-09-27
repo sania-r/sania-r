@@ -1223,6 +1223,14 @@ body.crankmode .casefinal{
   padding-bottom: 5%;
 }
 
+body.crankmode .final-item > a:nth-child(2) > img:nth-child(1){
+  max-width: 50dvh;
+}
+
+body.crankmode .final-item > a:nth-child(3) > img:nth-child(1){
+  max-width: 50dvh;
+}
+
 
 body.crankmode div.middle-item:nth-child(1){
   grid-column: 3/24;
@@ -1253,14 +1261,14 @@ div.middle-item:nth-child(2) > a:nth-child(2) > img:nth-child(1){
 body.crankmode div.final-item:nth-child(1){
   grid-column: 3/24;
     font-family: arial;
+    width: 100%;
   font-size: 0.9em;
 }
 
-
-  body.crankmode div.casemiddle {
+ body.crankmode div.casetitle,
+  body.crankmode div.casemiddle, {
     grid-column: unset !important;
     grid-row: unset !important;
-    width: 100vw;
 
 /*3D DESIGN MOBILE*/
 
