@@ -900,8 +900,16 @@ width: 100%;
   width: fit-content;
 }
 
+
+  body.crankmode div.casemiddle {
+    grid-column: unset !important;
+    grid-row: unset !important;
+    width: 100vw;
+  } 
+
 /*OFFICIELL STORLEK FÖR IPHONE*/
 @media only screen and (max-width: 800px)  {
+  
 
 /*INDEX AND HOME MOBILE*/
 body{
@@ -1213,6 +1221,8 @@ div.final-item:nth-child(2){
 }
 
 /*CRANK MODE MOBILE*/
+
+
 body.crankmode .casetitle{
   padding-bottom: 10%;
  padding-top: 25%;
