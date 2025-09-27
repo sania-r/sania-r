@@ -625,8 +625,10 @@ grid-template-columns: repeat(25, 1fr);
 }
 
 .final-item img{
-  max-width: 100%; /* Prevent images from exceeding the container width */
-  height: auto;    /* Maintain aspect ratio */
+  max-width: 100%;
+  max-height: 50vw; /* Prevent images from exceeding the container width */
+  width: auto;
+  height: auto;   /* Maintain aspect ratio */
   display: block; 
  margin-top: 2vw;
 }
