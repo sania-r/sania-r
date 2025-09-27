@@ -44,6 +44,7 @@ body.rumpanbar > main:nth-child(2){
 body.index > .indexy{
   grid-area: main;
   display: grid;
+
   grid-template-columns: 1fr 1fr 1fr;   /* 3 columns */
   grid-auto-rows: minmax(500px, auto); /* each new row is at least 100px tall */
 
@@ -76,6 +77,8 @@ body.graphicdesign .casemiddle{
 body.motiondesign .casetitle{ 
   grid-row:auto;
   height: fit-content;
+  padding-top: 15%;
+  padding-bottom: 10%;
 }
 
 body.motiondesign .casemiddle{ 
@@ -589,10 +592,12 @@ body.thesis p.title-item{
   padding: 0;     /* Remove extra padding */
   display: grid;
   grid-template-columns: repeat(25, 1fr);
-  grid-template-rows: repeat(7, 60px);
-  grid-column: 1 / span 3;
+  grid-template-rows: auto;
+  grid-column: 1 / -1;
   grid-row: 1;
   color: #fff;
+  padding-top: 15%;
+  padding-bottom: 10%;
   background-color:#F7F7F7;
   width: 100vw;
   height: fit-content;
@@ -604,12 +609,12 @@ body.thesis p.title-item{
   padding: 0;     /* Remove extra padding */
   display: grid;
 grid-template-columns: repeat(25, 1fr);
-  grid-template-rows: 50px auto 1fr 50px;
-  grid-column: 1 / span 3;
+  grid-template-rows: auto;
+  grid-column: 1 / -1;
   grid-row: 2;
   background-color: #e6e6e6;
   align-items: start;
-  height: fit-content;
+
 }
 
 .middle-item img{
@@ -631,11 +636,10 @@ grid-template-columns: repeat(25, 1fr);
   padding: 0;     /* Remove extra padding */
   display: grid;
   grid-template-columns: repeat(25, 1fr);
-  grid-template-rows: 50px auto 1fr 250px;
-  grid-column: 1 / span 3;
+  grid-template-rows: auto;
+  grid-column: 1 / -1;
   grid-row: 3;
   background-color: #d6d6d6;
-  height: auto;
 }
 
 
@@ -917,6 +921,7 @@ body.index > .indexy{ /*alltså MAIN för index*/
 
 }
 
+
 footer{
   position: relative;
   margin-top: auto;
@@ -1107,6 +1112,7 @@ body.rumpanbar .casetitle{
 grid-row: auto;
 padding-bottom: 5%;
 height: auto;
+padding-top: 25%;
 }
 
 body.rumpanbar .casemiddle{
@@ -1209,11 +1215,12 @@ div.final-item:nth-child(2){
 /*CRANK MODE MOBILE*/
 body.crankmode .casetitle{
   padding-bottom: 10%;
+ padding-top: 25%;
   grid-row: auto;
 }
 
 body.crankmode .casemiddle{
-  padding-bottom: 10%;
+  padding-bottom: 25%;
   grid-template-rows: repeat(5, auto);
   grid-row: auto;
 }
@@ -1221,14 +1228,6 @@ body.crankmode .casemiddle{
 body.crankmode .casefinal{
   grid-row: auto;
   padding-bottom: 5%;
-}
-
-body.crankmode .final-item > a:nth-child(2) > img:nth-child(1){
-  max-width: 50dvh;
-}
-
-body.crankmode .final-item > a:nth-child(3) > img:nth-child(1){
-  max-width: 50dvh;
 }
 
 
@@ -1261,14 +1260,11 @@ div.middle-item:nth-child(2) > a:nth-child(2) > img:nth-child(1){
 body.crankmode div.final-item:nth-child(1){
   grid-column: 3/24;
     font-family: arial;
-    width: 100%;
   font-size: 0.9em;
 }
 
- body.crankmode div.casetitle,
-  body.crankmode div.casemiddle, {
-    grid-column: unset !important;
-    grid-row: unset !important;
+
+
 
 /*3D DESIGN MOBILE*/
 
@@ -1292,6 +1288,9 @@ body.threeddesign div.middle-item:nth-child(1){
 
 }
 
+body.threeddesign .casetitle{
+  padding-top: 25%;
+}
 body.threeddesign .casemiddle{
   grid-template-rows: repeat(5, auto);
   height: auto;
@@ -1361,6 +1360,10 @@ display: block;
   height: 100%;
 }
 
+body.motiondesign .casetitle{
+  padding-top: 25%;
+}
+
 body.motiondesign .casemiddle div:nth-child(1){
   display: block;
   
@@ -1383,6 +1386,10 @@ body.motiondesign div.title-item:nth-child(2){
 
 /*THESIS MOBILE*/
 
+body.thesis .casetitle{
+  padding-top: 25%;
+}
+
 body.thesis div.title-item:nth-child(1){
   grid-column: 3/24;
   width: 100%;
@@ -1396,7 +1403,9 @@ body.thesis div.title-item:nth-child(2){
 
 /*GRAPHIC DESIGN MOBILE*/
 
-
+body.graphicdesign .casetitle{
+  padding-top: 25%;
+}
 .image-menu{
   display: block;
   margin-left: 10%;
