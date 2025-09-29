@@ -753,6 +753,22 @@ div.final-item:nth-child(3){
   font-size: 4vw;
 }
 
+
+body.rumpanbar div.final-item:nth-child(1){
+  display: block;
+  grid-column: 3/17;
+}
+body.rumpanbar div.final-item > p {
+  color: black;
+  font-family: arial;
+  font-size: 0.9em;
+}
+
+body.rumpanbar div.final-item:nth-child(2){
+  display: block;
+  grid-column: 3/17;
+}
+
 /*CRANK MODE / CRANKMODE DATOR*/
 
 body.crankmode div.middle-item:nth-child(1){ 
