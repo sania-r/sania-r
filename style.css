@@ -1284,6 +1284,11 @@ body.crankmode .final-item > a:nth-child(3) > img:nth-child(1){
   max-width: 100%;
 }
 
+body.crankmode div.final-item:nth-child(2){
+  display:block;
+  grid-row: auto;
+}
+
 
 
 /*3D DESIGN MOBILE*/
