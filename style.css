@@ -733,15 +733,6 @@ div.middle-item:nth-child(2) > p:nth-child(1){
 }
 
 
-div.final-item:nth-child(2){
-  display:block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  grid-row: 2;
-  grid-column: 5/22;
-  margin-top: 10vw;
-}
 
 div.final-item:nth-child(3){
   display:block;
@@ -814,7 +805,6 @@ body.crankmode div.middle-item:nth-child(3){
 body.crankmode div.final-item:nth-child(2){
   display: block;
   max-width: 100%;
-  grid-column: 3 / 11;
   grid-row: 3 / 7;
   margin-top: 0;
   height: fit-content;
@@ -1183,8 +1173,8 @@ div.middle-item:nth-child(2) > a:nth-child(1) > img:nth-child(1){
 
 
 
-div.final-item:nth-child(1){
-  grid-row: 7;
+body.rumpanbar div.final-item:nth-child(1){
+  grid-row: auto;
   grid-column: 3/24;
       font-size: 0.9em;
     font-family: arial;
@@ -1193,10 +1183,7 @@ div.final-item:nth-child(1){
   margin-top: 5%;
   line-height: 1.25em;
 }
-  
-.final-item img{
-  grid-row: 7;
-}
+
 
 div.final-item:nth-child(1) > a:nth-child(2) > img:nth-child(1){
     float: left;        /* makes text wrap around image */
@@ -1209,7 +1196,9 @@ div.final-item:nth-child(1) > a:nth-child(2) > img:nth-child(1){
 
 div.final-item:nth-child(2){
   grid-row: 8;
+  grid-column: 3/24;
   padding-bottom: 10vw;
+  display:flex;
 }
 
 body.rumpanbar div.final-item:nth-child(1) > a:nth-child(2) > img:nth-child(1){
@@ -1217,11 +1206,6 @@ body.rumpanbar div.final-item:nth-child(1) > a:nth-child(2) > img:nth-child(1){
  margin-left: 0;
 }
 
-
-
-body.rumpanbar .final-item img{
-  max-height: 70vw;
-}
 
 /*CRANK MODE MOBILE*/
 
