@@ -826,7 +826,7 @@ body.crankmode div.final-item:nth-child(1){
   max-height: 100%;
 height: fit-content;
   width: auto;
-  grid-column: 5/23;
+  grid-column: 3/24;
   grid-row: 1/ 3;
   color: black;
   font-family: "helvetica", sans-serif;
@@ -1276,7 +1276,7 @@ body.crankmode div.final-item:nth-child(1){
 }
 
 body.crankmode .final-item > a:nth-child(2) > img:nth-child(1){
-  max-width: 50%;
+  max-width: 100%;
 
 }
 body.crankmode .final-item > a:nth-child(3) > img:nth-child(1){
@@ -1287,7 +1287,9 @@ body.crankmode .final-item > a:nth-child(3) > img:nth-child(1){
 body.crankmode div.final-item:nth-child(2){
   display:block;
   grid-row: auto;
+  max-width: 100%;
 }
+
 
 
 
