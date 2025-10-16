@@ -261,7 +261,6 @@ color: #0db4e5;
   position: relative;
   grid-row: 3;
 top: -30%;
-left: 8%;
   width: fit-content;
   backdrop-filter: blur(4px);
   background-color: var(--logo-color);
@@ -1061,11 +1060,10 @@ width: 100%;
 
 .project-menu{
   display: flex;
-  width: 100dvw;
   justify-content: space-around;
-    flex-direction: column;
     gap: 2vw;
-  padding-bottom: 15%;}
+  padding-bottom: 15%;
+}
 
 #animation-container{
   position: fixed;
