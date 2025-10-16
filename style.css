@@ -1065,7 +1065,8 @@ width: 100%;
   width: 100dvw;
   justify-content: space-around;
     flex-direction: column;
-    gap: 2vw;}
+    gap: 2vw;
+  padding-bottom: 15%;}
 
 #animation-container{
   position: fixed;
@@ -1086,8 +1087,8 @@ a.object-link{
 }
 
 .object-item{
-width: 80vw;
-height: 80vw;
+width: 80dvw;
+height: auto;
   position: relative;
 }
 
