@@ -1398,9 +1398,7 @@ body.motiondesign .casetitle{
 }
 
 body.motiondesign .casemiddle div:nth-child(1){
-  display: block;
-  width: 100dvw;
-  
+  left:0;
 }
 
 body.motiondesign > .motiondesigny{
