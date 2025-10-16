@@ -1039,7 +1039,7 @@ height: fit-content;
 }
 
 .project-container{
-  grid-row: 3;
+  grid-row: 2;
   left: 0%;
   display: block;
 }
