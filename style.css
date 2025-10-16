@@ -764,7 +764,7 @@ body.rumpanbar div.final-item > p {
 
 body.rumpanbar div.final-item:nth-child(2){
   display: block;
-  grid-column: 6/24;
+  grid-column: 3/24;
   padding-bottom: 20%;
 }
 
