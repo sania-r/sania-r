@@ -624,8 +624,6 @@ grid-template-columns: repeat(25, 1fr);
 
 .final-item img{
   max-width: 100%;
-  max-height: 50vw; /* Prevent images from exceeding the container width */
-  width: auto;
   height: auto;   /* Maintain aspect ratio */
   display: block; 
  margin-top: 2vw;
@@ -1295,14 +1293,6 @@ body.crankmode div.final-item:nth-child(1){
 
 }
 
-body.crankmode .final-item > a:nth-child(2) > img:nth-child(1){
-  max-width: 100%;
-
-}
-body.crankmode .final-item > a:nth-child(3) > img:nth-child(1){
-  margin-left: 18.5%;
-  max-width: 100%;
-}
 
 body.crankmode div.final-item:nth-child(2){
   display:block;
