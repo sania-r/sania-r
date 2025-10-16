@@ -967,8 +967,9 @@ header{
 }
 .navbar{
   height:15%;
-  width: 100vw;
+  width: 100dvw;
 }
+
 .nav-menu {
   margin-left: 100%;
   width: 100%;
@@ -1014,15 +1015,27 @@ backdrop-filter: blur(8px);
 z-index: 99;
 }
 
+.welcome-container{
+  height: 100dvh;
+  width: 100dvw;
+  grid-row: unset;
+}
+
+.project-container{
+height: auto;
+width:100dvw;
+grid-row:unset;
+top: 0;
+}
+
 
 #introduction{
-  display: flex;
+  display: block;
   position: relative;
-  left: 10dvh;
   top: 20dvh;
-  max-height: fit-content;
+height: fit-content;
   font-size: 1.3em;
-  width: 80%;
+
 }
 
 .project-container{
@@ -1049,14 +1062,14 @@ width: 100%;
 
 .project-menu{
   display: flex;
+  width: 100dvw;
   justify-content: space-around;
     flex-direction: column;
     gap: 2vw;}
 
 #animation-container{
   position: fixed;
-  margin-top: 20%;
-top: 50%;
+top: 50dvh;
   }
   
 
