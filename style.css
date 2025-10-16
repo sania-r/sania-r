@@ -1257,6 +1257,7 @@ body.crankmode .casemiddle{
 body.crankmode .casefinal{
   grid-row: auto;
   padding-bottom: 5%;
+  width: 100dvw;
 }
 
 
