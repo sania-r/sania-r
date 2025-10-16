@@ -1314,13 +1314,7 @@ body.crankmode div.final-item:nth-child(2){
 
 /*3D DESIGN MOBILE*/
 
-body.threeddesign div.title-item:nth-child(2){
-  color: black;
-  font-family: arial;
-  font-size: 0.9em;
-grid-row: 4;
-grid-column: 3/24;
-}
+
 
 
 body.threeddesign div.middle-item:nth-child(1){
@@ -1335,7 +1329,7 @@ body.threeddesign div.middle-item:nth-child(1){
 }
 
 body.threeddesign .casetitle{
-  padding-top: 25%;
+  padding-top: 20dvh;
 }
 body.threeddesign .casemiddle{
   grid-template-rows: repeat(5, auto);
