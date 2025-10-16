@@ -1290,7 +1290,7 @@ body.crankmode div.final-item:nth-child(1){
     font-family: arial;
   font-size: 0.9em;
   grid-column: 3/24;
-
+max-width: 100%;
 }
 
 
