@@ -860,7 +860,7 @@ height: fit-content;
   position: relative;
   display:flex;
   justify-content: space-around;
-  width: 100vw;
+  width: fit-content;
   height: fit-content;
 }
 
@@ -1371,18 +1371,19 @@ body.threeddesign div.middle-item:nth-child(1) > a:nth-child(1) > img:nth-child(
 /*MOTION DESIGN MOBILE*/
 .video-gallery{
 display: block;
+width: 100dvw;
 }
 
 .video-menu{
   display: block;
   left: 0;
   list-style: none;
-  width: 100%;
+  width: fit-content;
  height:fit-content;
 }
 
 .video-object{
-  width: 100%;
+  width: 86dvw;
   height: 40dvh;
   padding-top: 10%;
 }
@@ -1398,6 +1399,7 @@ body.motiondesign .casetitle{
 
 body.motiondesign .casemiddle div:nth-child(1){
   display: block;
+  width: 100dvw;
   
 }
 
