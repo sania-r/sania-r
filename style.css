@@ -1109,6 +1109,7 @@ height: auto;
 }
 
 /*RUMPANBAR MOBILE*/
+
 body.rumpanbar > main:nth-child(2){
   grid-area: main;
   display: grid;
@@ -1134,7 +1135,7 @@ body.rumpanbar .casetitle{
 grid-row: auto;
 padding-bottom: 5%;
 height: auto;
-padding-top: 25%;
+padding-top: 20dvh;
 }
 
 body.rumpanbar .casemiddle{
@@ -1245,7 +1246,7 @@ body.rumpanbar div.final-item:nth-child(1) > a:nth-child(2) > img:nth-child(1){
 
 body.crankmode .casetitle{
   padding-bottom: 10%;
- padding-top: 25%;
+ padding-top: 20dvh;
   grid-row: auto;
 }
 
@@ -1406,7 +1407,7 @@ display: block;
 }
 
 body.motiondesign .casetitle{
-  padding-top: 25%;
+  padding-top: 20dvh;
 }
 
 body.motiondesign .casemiddle div:nth-child(1){
@@ -1449,7 +1450,7 @@ body.thesis div.title-item:nth-child(2){
 /*GRAPHIC DESIGN MOBILE*/
 
 body.graphicdesign .casetitle{
-  padding-top: 25%;
+  padding-top: 20dvh;
 }
 .image-menu{
   display: block;
