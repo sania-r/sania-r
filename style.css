@@ -1418,14 +1418,16 @@ body.motiondesign div.title-item:nth-child(2){
 
 /*THESIS MOBILE*/
 
+body.thesis div.title-item > h1:nth-child(1){
+font-size: 2em;
+    width: 100vw;
+    height: auto;}
+
+
 body.thesis .casetitle{
   padding-top: 25%;
 }
 
-body.thesis div.title-item:nth-child(1){
-  grid-column: 3/24;
-  width: 100%;
-}
 body.thesis div.title-item:nth-child(2){
   color: black;
   font-family: arial;
