@@ -1420,7 +1420,7 @@ body.motiondesign div.title-item:nth-child(2){
 /*THESIS MOBILE*/
 
 body.thesis .casetitle{
-  padding-top: 25%;
+  padding-top: 20dvh;
 }
 
 body.thesis div.title-item:nth-child(1){
