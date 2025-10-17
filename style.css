@@ -85,7 +85,7 @@ body.motiondesign .casemiddle{
   grid-row: auto;
   height: fit-content;
   overflow-y: clip;
-  padding-bottom: 10dvh;
+  padding-bottom: 50dvh;
 }
 
 body.motiondesign .casemiddle div:nth-child(1){
@@ -1059,11 +1059,12 @@ width: 100%;
 
 
 .project-menu{
-  display: flex;
-  justify-content: space-between;
+display: flex;
+justify-content: center;
+  width: 100dvw;
     gap: 2vw;
   padding-bottom: 15%;
-  left: 3dvw;
+  padding-left: 0;
 }
 
 #animation-container{
@@ -1085,7 +1086,7 @@ a.object-link{
 }
 
 .object-item{
-width: 80dvw;
+width: 100dvw;
 height: auto;
   position: relative;
 }
@@ -1095,7 +1096,7 @@ height: auto;
   opacity: 1;
   width: 100%;
   font-size: 1.0em;
-  width: 80vw;
+  width: 100dvw;
   height: 80vw;
   text-align: center;
   margin-top: 0;
