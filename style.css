@@ -477,7 +477,7 @@ color: white;
 .frameandtextcontainer{
   display: flex;
   width: 100vw;
-  position: absolute;
+  position: relative;
   height: 30vw;
   justify-content: center;
   top: 26%;
@@ -497,8 +497,7 @@ font-family: 'new-science', sans-serif;
 }
 
 .heyitsme{
-  position: absolute;
-  top: -15%;
+  position: relative;
   font-size: 3.5vw;
   font-weight: bolder;
     display: flex;
@@ -1459,40 +1458,62 @@ body.graphicdesign .middle-item img{
 /*ABOUT ME MOBILE*/
 
 
-body.about main.aboutme{ 
- 
-  grid-auto-rows:auto;
-
-
-}
-
 
 body.about .casemiddle{
-width: 100vw;
-height: 100dvh;
-
+  display: flex;
+width: 100dvw;
+height: auto;
 }
 
 .heyitsme{
-  font-size: 2em;
-  margin-top: -5%;
+  display: flex;
+  width: fit-content;
+  font-size: 2.5em;
+  position: relative;
+  top: -11dvh;
+  left: 7dvw;
+
+
 }
 
 #aboutmeframe{
-  position: relative;
-  left: -5%;
-  width: 50%;
-  height: auto;
+  display: flex;
+width: 50%;
+position: relative;
+top: 20dvh;
+left: -30dvw;
 }
 
 .aboutme{
-
   font-size: 0.9em;
 
 }
 
-div.aboutme > p:nth-child(1){ 
-margin-top: -90%;
-padding-left: 50%;
-width: 50vw;
+.frameandtextcontainer{
+  display: flex;
+  width: fit-content;
+  position: relative;
+
+}
+
+.frameandtextmenu{
+  display: block;
+}
+
+body.about .casemiddle div:nth-child(1){ 
+  display: block;
+  width: 55dvw;
+  left: 34dvw;
+}
+
+body.about .casemiddle div:nth-child(2){
+  position: relative;
+
+}
+
+body.about .casemiddle div:nth-child(3){
+  position:relative;
+  top: -15dvh;
+}
+
 }
