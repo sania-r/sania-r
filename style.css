@@ -273,11 +273,13 @@ top: -30%;
   margin: 0;
   position: relative;
   display: flex;
-  width: 86vw;
+  width: 100dvw;
   height:fit-content;
  flex-wrap: wrap;
   list-style: none;
-  justify-content: space-evenly;
+  gap: 2dvw;
+  padding-left: 0;
+  justify-content: center;
 
 
 }
