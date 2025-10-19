@@ -109,9 +109,9 @@ window.addEventListener("scroll", () => {
 
  
   if (scrollY > targetY){ 
-  project.style.backgroundColor = "white";
+  project.style.backgroundColor = "transparent";
 } else {
-  project.style.backgroundColor = "rgba(251, 14, 91, 0.2)";
+  project.style.backgroundColor = "transparent";
 }
 
 });

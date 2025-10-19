@@ -260,10 +260,9 @@ color: #0db4e5;
   display: grid;
   position: relative;
   grid-row: 3;
-top: -30%;
+top: -10%;
   width: fit-content;
   backdrop-filter: blur(4px);
-  background-color: var(--logo-color);
   border-radius: 2vw;
  background-blend-mode: normal;
   transition: all ease 0.8s;
@@ -334,11 +333,10 @@ video.layer{
 }
 
 #scrollery{
-display: inline-block;
+display: block;
 position: absolute;
-width: 30%;
-top: 87%;
-left: 40%;
+top: 90%;
+left: 47%;
 height: fit-content;
 mix-blend-mode: difference;
 backdrop-filter: blur(8px);
@@ -369,7 +367,7 @@ z-index: 99;
   color:white;
   font-size: 3.3vw;
 left: 30%;
-top: 13%;
+top: 20dvh;
   width: 63%;
 }
 
@@ -389,7 +387,7 @@ html body main div.welcome-container div#animation-container svg g g g path{
 
 .object-item{
 display: block;
-width: 27vw;
+width: fit-content;
 height: auto;
 position: relative;
 }
@@ -399,8 +397,8 @@ position: relative;
   display: flex;
 margin-top: 0 auto;
   position: relative;
-  width: 27vw;
-  height: 15vw;
+  width: 42dvw;
+  height: 35vw;
   object-fit: cover;
   transition: all ease 0.3s;
   filter: blur(0vw);
@@ -413,8 +411,8 @@ margin-top: 0 auto;
 
 .text{ 
   display:block;
-  width: 27vw;
-  height: 15vw;
+  width: 42vw;
+  height: 35vw;
   text-align: center;
   position: relative;
   font-family: "new-science", sans-serif;
@@ -464,8 +462,8 @@ a.object-link{
   text-decoration: none;
   text-align: center;
   align-content: center;
-width: 27vw;
-height: 15vw;
+width: 42vw;
+height: 35vw;
 color: white;
 }
 
