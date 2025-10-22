@@ -247,12 +247,12 @@ color: #0db4e5;
 
 .bar{
   display: block;
-  width: 20vw;
-  height: 3vw;
-  margin: 2vw auto;
+  width: 15vw;
+  height: 0.5vw;
+  margin: 3vw auto;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
-  background-color: white;
+  background-color: var(--logo-color);
 }
 
 
@@ -978,6 +978,7 @@ footer{
   display: block;
   top: 2vw;
   right: 5vw;
+  left: 73vw;
   z-index: 1000; /* on top of everything */
 }
 
@@ -987,11 +988,11 @@ footer{
 }
 
 .hamburger.active .bar:nth-child(1){
-  transform: translateY(8vw) rotate(45deg);
+  transform: translateY(3.5vw) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(3){
-  transform: translateY(-2vw) rotate(-45deg);
+  transform: translateY(-4vw) rotate(-45deg);
 }
 
 #nav-branding{ 
