@@ -1399,6 +1399,10 @@ body.threeddesign div.middle-item:nth-child(3){
   grid-column: 3/24;
 }
 
+body.threeddesign div.middle-item:nth-child(4){
+  grid-row: 7;
+}
+
 body.threeddesign div.middle-item:nth-child(3) > a:nth-child(1) > img:nth-child(1){ 
   max-width: 100%;
 }
