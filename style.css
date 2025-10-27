@@ -554,7 +554,7 @@ body.threeddesign div.threedobject:nth-child(1) > div:nth-child(1) > a:nth-child
 }
 
 body.threeddesign .middle-item img{
-  max-width: 140%;
+  max-width: 100%;
 }
 
 
@@ -565,6 +565,7 @@ body.threeddesign div.title-item:nth-child(2){
 grid-row: 4;
 grid-column: 3/24;
 }
+
 
 /*THESIS design DATOR*/
 
@@ -1365,8 +1366,6 @@ body.crankmode div.middle-item:nth-child(1) > a:nth-child(1) > img:nth-child(1) 
 /*3D DESIGN MOBILE*/
 
 
-
-
 body.threeddesign div.middle-item:nth-child(1){
   display: block;
   width: 100%;
@@ -1378,6 +1377,10 @@ body.threeddesign div.middle-item:nth-child(1){
 
 }
 
+div.middle-item:nth-child(1) > p:nth-child(2){
+  margin-top: 0dvh;
+}
+
 body.threeddesign .casetitle{
   padding-top: 20dvh;
 }
@@ -1387,20 +1390,31 @@ body.threeddesign .casemiddle{
 
 }
 
+body.threeddesign div.middle-item:nth-child(1) > p:nth-child(2){
+  padding-top: 2dvh;
+  font-family: arial;
+  font-size: 1em;
+  line-height: 1.3em;
+}
+
 body.threeddesign div.middle-item:nth-child(2){
   grid-row: 5/6;
   grid-column: 3/24;
   padding-top: 10%;
+  font-family: arial;
+  font-size: 1em;
+  line-height: 1.3em;
 }
 
 body.threeddesign div.middle-item:nth-child(3){
   grid-row: 6;
-  padding-bottom: 10%;
   grid-column: 3/24;
 }
 
 body.threeddesign div.middle-item:nth-child(4){
   grid-row: 7;
+  grid-column: 3/24;
+  margin-top: .5dvh;
 }
 
 body.threeddesign div.middle-item:nth-child(3) > a:nth-child(1) > img:nth-child(1){ 
@@ -1416,6 +1430,8 @@ body.threeddesign div.middle-item:nth-child(4) > a:nth-child(1) > img:nth-child(
 
 body.threeddesign div.middle-item:nth-child(1) > a:nth-child(1) > img:nth-child(1){
   max-width: 100%;
+    margin-top: 2dvh;
+
 }
 
 body.threeddesign .animationvideo{
@@ -1425,9 +1441,6 @@ body.threeddesign .animationvideo{
 
 }
 
-body.threeddesign div.middle-item:nth-child(1) > a:nth-child(1) > img:nth-child(1){
-  margin: 2vw 0vw 2vw 2vw;
-}
 
 
 /*MOTION DESIGN MOBILE*/
