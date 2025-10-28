@@ -997,7 +997,7 @@ footer{
 }
 
 #nav-branding{ 
-  width: 100%;
+  width: fit-content;
 }
 
 
@@ -1089,15 +1089,13 @@ height: fit-content;
 #brandy{
   display: block;
   position: relative;
-  font-size: 1.5em;
-width: 100%;
+width: fit-content;
+margin-left: 0;
+left: 14%;
+font-size: 1.5em;
 
 }
 
-#brandy > p:nth-child(1){
-  width: 100%;
-  height: fit-content;
-}
 
 
 .project-menu{
