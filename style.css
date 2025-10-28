@@ -997,7 +997,7 @@ footer{
 }
 
 #nav-branding{ 
-  width: 26%;
+  width: 100%;
 }
 
 
@@ -1075,8 +1075,8 @@ top: 0;
   top: 23dvh;
   left: 10dvw;
 height: fit-content;
-  font-size: 1.9em;
-  width: 80%;
+  font-size: 1.8em;
+  width: 85%;
 
 }
 
@@ -1088,10 +1088,8 @@ height: fit-content;
 
 #brandy{
   display: block;
-  position: absolute;
-  font-size: 3vw;
-  left: 2vw;
-top: 3vh;
+  position: relative;
+  font-size: 1.5em;
 width: 100%;
 
 }
