@@ -537,12 +537,11 @@ body.about .casemiddle{
 
 body.threeddesign .casemiddle div:nth-child(1){
   display: block;
-  justify-content: space-around;
   gap: 3vw;
-  height: 41vw;
+  height: fit-content;
   position: relative;
-  left: 1%;
-  width: 50vw;
+ width: 100dvw;
+ max-width: 100dvw;
 }
 
 body.threeddesign > main:nth-child(1){
@@ -552,7 +551,7 @@ flex: 1;
 
 body.threeddesign .casemiddle{
   display: relative;
-  height:190vw;
+  height:auto;
 }
 
 body.threeddesign div.threedobject:nth-child(1) > div:nth-child(1) > a:nth-child(1) > img:nth-child(1){
@@ -561,7 +560,8 @@ body.threeddesign div.threedobject:nth-child(1) > div:nth-child(1) > a:nth-child
 }
 
 body.threeddesign .middle-item img{
-  max-width: 100%;
+  max-width: 90%;
+padding-left: 5%;
 }
 
 
@@ -572,6 +572,47 @@ body.threeddesign div.title-item:nth-child(2){
 grid-row: 4;
 grid-column: 3/24;
 }
+
+
+div.middle-item:nth-child(2){
+  width: 100dvw;
+  margin-left: 0;
+}
+
+body.threeddesign div.middle-item:nth-child(2){
+  grid-row: 5/6;
+
+}
+
+body.threeddesign div.middle-item:nth-child(3){
+  max-width: 100dvw;
+  grid-row: 6;
+  grid-column: 1;
+}
+
+body.threeddesign div.middle-item:nth-child(4){
+  max-width: 100dvw;
+  grid-row: 7;
+  grid-column: 1;
+  margin-top: .5dvh;
+}
+
+div.middle-item:nth-child(1) > p:nth-child(2){
+  font-family: arial;
+  font-size: 1em;
+  line-height: 1.3em;
+  max-width: 90%;
+  margin-left: 5dvw;
+}
+
+div.middle-item:nth-child(2) > p:nth-child(3){
+  font-family: arial;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  max-width: 90%;
+  margin-left: 5dvw;
+}
+
 
 
 /*THESIS design DATOR*/
@@ -588,6 +629,8 @@ body.thesis p.title-item{
 .foressay{
   margin-top: 3vw;
 }
+
+
 
 
 /*RUMPANBAR DATOR*/
@@ -1445,6 +1488,11 @@ body.threeddesign .animationvideo{
   right: 0;
   max-width: 100%;
 
+}
+
+body.threeddesign .middle-item img{
+  max-width: 100%;
+  padding-left: unset;
 }
 
 
