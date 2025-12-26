@@ -570,6 +570,7 @@ body.threeddesign div.title-item:nth-child(2){
   font-family: arial;
   font-size: 0.9em;
 grid-row: 4;
+line-height: 1.3em;
 grid-column: 3/24;
 }
 
@@ -746,7 +747,7 @@ body.rumpanbar .casemiddle div:nth-child(2){
 
 body.rumpanbar .middle-item img{
   float:left;
-margin: 2vw 2vw 0vw 0vw;}
+margin: 2vw 2vw 0vw 5vw;}
 
 div.title-item:nth-child(2){
   display: block;
@@ -765,6 +766,7 @@ body.rumpanbar div.middle-item:nth-child(2) > p:nth-child(1){
   font-size: 1em;
   line-height: 1.3em;
   margin-top: 8dvh;
+  margin: 5dvw;
 }
 
 
@@ -848,12 +850,11 @@ body.crankmode div.middle-item:nth-child(1){
 
 body.crankmode div.middle-item:nth-child(2){
   display: block;
-  max-width: 100%;
-  grid-column: 3 / 24;
+  width: 90%;
   font-family: arial;
   font-size: 1em;
   line-height: 1.3em;
-  grid-row: 5;
+  margin: 1dvw;
   margin-top: 0;
 }
 
@@ -1333,6 +1334,13 @@ body.rumpanbar div.final-item:nth-child(1) > a:nth-child(2) > img:nth-child(1){
 }
 
 
+body.rumpanbar div.middle-item:nth-child(1) > p:nth-child(2){
+  font-family: arial;
+  font-size: 1em;
+  line-height: 1.3em;
+  padding-top: 5%;
+}
+
 /*CRANK MODE MOBILE*/
 
 
@@ -1356,9 +1364,10 @@ body.crankmode .casefinal{
 
 
 body.crankmode div.middle-item:nth-child(1){
-  grid-column: 3/24;
   grid-template-rows: repeat(4, auto);
   grid-row: 1;
+  margin: -4dvw;
+  margin-top: 2dvh;
   height: auto;
   width: auto;
 }
