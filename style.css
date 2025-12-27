@@ -93,7 +93,10 @@ body.motiondesign .casemiddle div:nth-child(1){
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2%;
-  left: 6%;
+}
+
+body.motiondesign div.middle-item:nth-child(2){
+  width: unset;
 }
 
 body.motiondesign p.title-item{
@@ -953,17 +956,17 @@ body.crankmode div.middle-item:nth-child(1) > a:nth-child(1) > img:nth-child(1) 
 /*MOTION DESIGN DATOR*/
 
 .video-gallery{
-  display:flex;
-  width: 80vw;
+  display: block;
+  width: 100dvw;
   height: fit-content;
 }
 
 .video-menu{
   position: relative;
   display:flex;
-  justify-content: space-around;
   width: fit-content;
   height: fit-content;
+  justify-content: center;
 }
 
 .video-object{
@@ -971,6 +974,7 @@ display: flex;
 object-fit: cover;
 width: 35vw;
 height: 20vw;
+margin: 0.5vw;
 }
 
 body.motiondesign div.title-item:nth-child(2){
