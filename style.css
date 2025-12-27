@@ -114,7 +114,7 @@ body.motiondesign div.middle-item:nth-child(4){
 .image-gallery{
   display: block;
   width: 100vw;
-  height: 50vw;
+  height: auto;
 }
 
 .image-menu{
@@ -151,6 +151,10 @@ body.graphicdesign div.middle-item:nth-child(3){
 
 body.graphicdesign div.middle-item:nth-child(4){
   margin-top: 0;
+}
+
+body.graphicdesign div.middle-item:nth-child(2){
+  width: fit-content
 }
 
 
