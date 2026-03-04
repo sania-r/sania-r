@@ -500,7 +500,7 @@ color: white;
 .aboutme{
   display: block;
 color: black;
-font-family: 'new-science', sans-serif;
+font-family: 'arial';
 }
 
 body.about div.middle-item:nth-child(2){
