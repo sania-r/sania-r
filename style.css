@@ -166,7 +166,7 @@ footer{
 display:block;
 position: relative;
 grid-area: footer;
-background-color: black;
+background-color: var(--background-color);
 text-align: center;
 width: 100%;
 }
@@ -295,7 +295,7 @@ top: -10%;
   display: block;
   position: fixed;
   grid-row: 1;
-  background-color: black;
+  background-color: var(--background-color); /*background for entire HTML*/
   width: 100%;
   height: 100vh;
   margin: 0;
@@ -362,9 +362,12 @@ z-index: 99;
   stroke-width: 4px;
 }
 
+/*BACKGROUND COLORS AND MAIN COLORS FOR EVERYTHING*/
 :root{
+  --background-color: #141412;
   --logo-color: #5D16E3;
   --font-family:  "new-science", sans-serif;
+  
 }
 
 /*INTRODUCTION design*/
@@ -533,7 +536,7 @@ font-style: normal;
 margin-left: 0vw;
 padding: 5vw;
 font-size: 1em;
-color: var(--logo-color);
+color: white;
 }
 
 body.about .casemiddle{
