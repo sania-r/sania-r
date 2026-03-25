@@ -669,9 +669,15 @@ body.thesis div.title-item:nth-child(2){
 }
 
 body.thesis .casemiddle{
-  padding-top: 100%;
+  padding-top: 10%;
+  padding-bottom: 15%;
 }
 
+body.thesis div.middle-item:nth-child(1){
+  width: 100%;
+  height: auto;
+  grid-column: 4/23;
+}
 
 
 /*RUMPANBAR DATOR*/
