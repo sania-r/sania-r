@@ -654,18 +654,23 @@ div.middle-item:nth-child(2) > p:nth-child(3){
 /*THESIS design DATOR*/
 
 body.thesis div.title-item > h1:nth-child(1){
-  width: 100vw;
+  width: 100dvw;
 }
 
-body.thesis p.title-item{ 
-  font-family: var(--font-family);
-  flex-wrap: wrap;
+body.thesis div.title-item:nth-child(1){
+  grid-row: 1;
+
+}
+body.thesis div.title-item:nth-child(2){
+  color: black;
+  font-family: arial;
+  font-size: 0.9em;
+  grid-column: 3/23;
 }
 
-.foressay{
-  margin-top: 3vw;
+body.thesis .casemiddle{
+  padding-top: 100%;
 }
-
 
 
 
@@ -786,7 +791,7 @@ body.rumpanbar .middle-item img{
   float:left;
 margin: 2vw 3vw 2vw 3vw;}
 
-div.title-item:nth-child(2){
+body.rumpanbardiv.title-item:nth-child(2){
   display: block;
   grid-column: 3 / 14;
   height: auto;
