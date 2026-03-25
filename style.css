@@ -505,9 +505,29 @@ color: white;
 color: black;
 font-family: 'arial';
 }
+.picofme{
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 2;
+}
+/* Ellipse 1 */
+.elly{ 
+position: relative;
+width: 300px;
+height: 300px;
+background: var(--logo-color);
+border-radius: 50%;
+z-index: 1;
+}
+
 
 body.about div.middle-item:nth-child(2){
   margin-top: -13%;
+  margin-left: 5dvw;
 }
 .heyitsme p{
   font-size: 5vw;
@@ -523,6 +543,7 @@ width: 29dvw;
   display: flex;
   width: 40vw;
   height: 40vw;
+  margin-left:-3dvw;
   grid-row: 4;
 }
 
@@ -1641,6 +1662,25 @@ left: 8dvw;
   font-family:Arial, Helvetica, sans-serif;
 }
 
+.picofme{
+  display: block;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 2;
+}
+/* Ellipse 1 */
+.elly{ 
+position: relative;
+width: 150px;
+height: 150px;
+background: var(--logo-color);
+border-radius: 50%;
+z-index: 1;
+}
+
 
 div.aboutme > p:nth-child(1){
   margin-left: 0dvw;
@@ -1650,6 +1690,7 @@ div.aboutme > p:nth-child(1){
 
 body.about div.middle-item:nth-child(2){
   margin-top: -7%;
+  margin-left: 10dvw;
   width: fit-content;
   height: fit-content;}
 
