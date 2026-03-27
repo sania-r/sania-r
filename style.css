@@ -149,8 +149,9 @@ body.karhouse div.title-item:nth-child(1){
 body.karhouse div.title-item:nth-child(2){
   color: black;
   font-family: arial;
-  grid-column: 3/24;
+  grid-column: 3/20;
   grid-row: 4;
+  line-height: 1.3em;
 }
 
 body.karhouse .image-gallery{
@@ -191,7 +192,8 @@ body.karhouse div.middle-item:nth-child(18) > li:nth-child(1) > a:nth-child(1){
 }
 
 body.karhouse div.middle-item:nth-child(19){
-  width: 35%;
+  width: 25%;
+  margin-left: 8dvw;
 }
 
 body.karhouse div.middle-item:nth-child(19) > li:nth-child(1) > a:nth-child(1){
@@ -200,15 +202,32 @@ body.karhouse div.middle-item:nth-child(19) > li:nth-child(1) > a:nth-child(1){
 }
 
 body.karhouse div.middle-item:nth-child(20){
-  width: 72%;
+  width: 60%;
 }
 
 body.karhouse div.middle-item:nth-child(20) > li:nth-child(1) > a:nth-child(1){
   width: 80%;
 }
 
-.casefinale > div:nth-child(1){
+body.karhouse .casefinale > div:nth-child(1){
   font-family: 'arial';
+}
+
+body.karhouse .casefinale{
+  grid-row: 3;
+  height: auto;
+  grid-column: 1/-1;
+  background-color: #d6d6d6;
+  display:grid;
+}
+
+body.karhouse .casefinale > div:nth-child(1){
+  justify-content: center;
+  display: flex;
+}
+
+body.karhouse .casefinale > div:nth-child(1) > h1:nth-child(1){
+  font-size: 1.5em;
 }
 
 
