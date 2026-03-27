@@ -1400,10 +1400,7 @@ body.karhouse .casetitle {
     height: auto;
     padding-top: 20dvh;
   }
-body.karhouse .casemiddle > div:nth-child(2) > ul:nth-child(1){
- display: block;
- width: 40dvw;
-}
+
 body.karhouse .casemiddle > div:nth-child(2) > ul:nth-child(1) > div:nth-child(1){
   display: block;
   width: 100%;
@@ -1415,12 +1412,13 @@ body.karhouse .casemiddle > div:nth-child(2) > ul:nth-child(1) > div:nth-child(1
 }
 
 body.karhouse .image-menu{
-  display: flex;
+    display: block;
   margin-left: 0;
 }
 
 body.karhouse div.middle-item:nth-child(2){
   margin-top: 0;
+  display: unset;
 }
 
 
