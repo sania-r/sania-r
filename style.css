@@ -235,14 +235,14 @@ body.karhouse .casefinale > div:nth-child(1) > h1:nth-child(1){
 
 .image-gallery{
   display: block;
-  width: 100vw;
+  width: 100dvw;
   height: auto;
 }
 
 .image-menu{
  display: flex;
-  width: 86vw;
-  gap: 1.5vw;
+  width: 86dvw;
+  gap: 1.5dvw;
   height: fit-content;
   flex-wrap: wrap;
   justify-content: space-around;
