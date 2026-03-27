@@ -1864,6 +1864,7 @@ body.about div.middle-item:nth-child(2){
 body.about .casemiddle{
   width: 100dvw;
   height: 100dvh;
+  padding-bottom: 50dvh;
 
 
 }
