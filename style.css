@@ -684,6 +684,31 @@ body.about .casemiddle{
   height: 100dvh;
 }
 
+body.about button.emailbtn{
+  display: block;
+  position: relative;
+  background-color: var(--logo-color);
+  border: none;
+  padding: 1vw 2vw;
+  border-radius: 0.5vw;
+  transition: all ease 0.3s;
+  font-family: "new-science", sans-serif;
+  margin-top: 2dvw;
+}
+
+body.about button.emailbtn a{
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2em;
+}
+
+body.about button.emailbtn:hover{
+  background-color: var(--logo-color);
+  transform: scale(1.05);
+  transition: all ease 0.3s;
+}
 
 /*3D DESIGN HTML DATOR*/
 
@@ -1869,9 +1894,16 @@ body.about .casemiddle{
 
 }
 
+body.about div.aboutme > p:nth-child(2){
+  margin-left: -1dvw;
+  width: 50dvw;
+}
 
+body.about button.emailbtn{
+  width: 50dvw;
 
-
-
+}
+body.about button.emailbtn a{
+  font-size: 1.0em;
 
 }
