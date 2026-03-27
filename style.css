@@ -1376,6 +1376,31 @@ body.karhouse .casetitle {
     padding-top: 20dvh;
   }
 
+body.karhouse .casemiddle > div:nth-child(2) > ul:nth-child(1) > div:nth-child(1){
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body.karhouse .casemiddle > div:nth-child(2) > ul:nth-child(1) > div:nth-child(1){ 
+  width: fit-content;
+}
+
+body.karhouse .image-menu{
+  display: flex;
+  margin-left: 0;
+}
+
+body.karhouse div.middle-item:nth-child(2){
+  margin-top: 0;
+}
+
+
+body.karhouse   div.middle-item:nth-child(1){
+  grid-row: unset;
+  grid-column: unset;
+}
+
 /*RUMPANBAR MOBILE*/
 
 body.rumpanbar > main:nth-child(2){
