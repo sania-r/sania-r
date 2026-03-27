@@ -1400,7 +1400,9 @@ body.karhouse .casetitle {
     height: auto;
     padding-top: 20dvh;
   }
-
+body.karhouse .casemiddle > div:nth-child(2) > ul:nth-child(1){
+ display: flex;
+}
 body.karhouse .casemiddle > div:nth-child(2) > ul:nth-child(1) > div:nth-child(1){
   display: block;
   width: 100%;
