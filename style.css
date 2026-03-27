@@ -1800,14 +1800,6 @@ body.graphicdesign .middle-item img{
 
 /*ABOUT ME MOBILE*/
 
-
-
-body.about .casemiddle{
-  grid-column: unset;
-
-}
-
-
 .heyitsme p{
   font-size: 3em;
   width:50dvw;
