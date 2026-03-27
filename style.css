@@ -125,6 +125,7 @@ body.karhouse .casetitle{
 /*MF KÅRHOUSE DATOR*/
 
 body.karhouse .casemiddle{
+  display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
 }
@@ -1413,7 +1414,6 @@ body.karhouse .casemiddle > div:nth-child(2) > ul:nth-child(1) > div:nth-child(1
 
 body.karhouse div.middle-item:nth-child(2){
   margin-top: 0;
-  display: unset;
 }
 
 
@@ -1435,6 +1435,7 @@ body.karhouse .image-menu{
   height: fit-content;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-left: -4%;
 }
 
 body.karhouse .middle-item img{
