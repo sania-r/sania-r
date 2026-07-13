@@ -147,7 +147,7 @@ body.karhouse div.title-item:nth-child(2){
   font-family: arial;
   grid-column: 3/20;
   grid-row: 4;
-  line-height: 1.4em;
+  line-height: 1.3em;
 }
 
 body.karhouse .image-gallery{
